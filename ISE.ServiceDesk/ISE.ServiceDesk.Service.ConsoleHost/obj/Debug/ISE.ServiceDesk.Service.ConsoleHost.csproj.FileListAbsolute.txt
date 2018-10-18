@@ -1,0 +1,11 @@
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ServerRelease\ISE.ServiceDesk.Service.ConsoleHost.exe.config
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ServerRelease\ISE.ServiceDesk.Service.ConsoleHost.exe
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ServerRelease\ISE.ServiceDesk.Service.ConsoleHost.pdb
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ISE.ServiceDesk.Service.ConsoleHost\obj\Debug\ISE.ServiceDesk.Service.ConsoleHost.exe
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ISE.ServiceDesk.Service.ConsoleHost\obj\Debug\ISE.ServiceDesk.Service.ConsoleHost.pdb
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Service.ConsoleHost\obj\Debug\ISE.ServiceDesk.Service.ConsoleHost.csprojResolveAssemblyReference.cache
+E:\ISECollection\ISE.ServiceDesk\ServerRelease\ISE.ServiceDesk.Service.ConsoleHost.exe.config
+E:\ISECollection\ISE.ServiceDesk\ServerRelease\ISE.ServiceDesk.Service.ConsoleHost.exe
+E:\ISECollection\ISE.ServiceDesk\ServerRelease\ISE.ServiceDesk.Service.ConsoleHost.pdb
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Service.ConsoleHost\obj\Debug\ISE.ServiceDesk.Service.ConsoleHost.exe
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Service.ConsoleHost\obj\Debug\ISE.ServiceDesk.Service.ConsoleHost.pdb

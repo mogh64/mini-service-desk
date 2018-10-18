@@ -1,0 +1,33 @@
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ClientRelease\ISE.ServiceDesk.Client.dll
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ClientRelease\ISE.ServiceDesk.Client.pdb
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.dll
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.pdb
+E:\ISECollection\ISE.ServiceDesk\ClientRelease\ISE.ServiceDesk.Client.dll
+E:\ISECollection\ISE.ServiceDesk\ClientRelease\ISE.ServiceDesk.Client.pdb
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.csprojResolveAssemblyReference.cache
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.dll
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.pdb
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.UCRequestList.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.csproj.GenerateResource.Cache
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCServiceCategory.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCServiceJob.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCAssignServiceJob.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCServiceCatJob.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCRequestEntry.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCAssignServiceToJob.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.dll.licenses
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCAddAttachment.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCTest.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCRequestWork.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCWorkList.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCWorkEntry.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCExperts.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCRoleEntry.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCWeight.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCChangeRole.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCItServices.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCReports.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.UCRequestManagement.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCSelectServiceCategoryJob.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCUserRequestView.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client\obj\Debug\ISE.ServiceDesk.Client.Entry.UCExpertEdit.resources

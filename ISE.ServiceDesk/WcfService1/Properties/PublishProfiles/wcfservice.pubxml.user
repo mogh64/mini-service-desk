@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EmitMapper.dll">
+      <publishTime>01/06/2010 01:06:36</publishTime>
+    </File>
+    <File Include="bin/ISE.ClassLibrary.dll">
+      <publishTime>03/14/2013 07:25:04</publishTime>
+    </File>
+    <File Include="bin/ISE.Framework.Common.dll">
+      <publishTime>07/22/2017 09:40:30</publishTime>
+    </File>
+    <File Include="bin/ISE.Framework.Server.Core.dll">
+      <publishTime>07/22/2017 09:44:12</publishTime>
+    </File>
+    <File Include="bin/ISE.Framework.Utility.dll">
+      <publishTime>07/22/2017 09:40:29</publishTime>
+    </File>
+    <File Include="bin/ISE.ServiceDesk.Bussiness.dll">
+      <publishTime>02/18/2018 11:33:42</publishTime>
+    </File>
+    <File Include="bin/ISE.ServiceDesk.Common.dll">
+      <publishTime>02/18/2018 11:33:39</publishTime>
+    </File>
+    <File Include="bin/ISE.ServiceDesk.DataAccess.dll">
+      <publishTime>02/18/2018 11:33:42</publishTime>
+    </File>
+    <File Include="bin/ISE.ServiceDesk.Model.dll">
+      <publishTime>02/18/2018 11:33:41</publishTime>
+    </File>
+    <File Include="bin/ISE.ServiceDesk.Service.dll">
+      <publishTime>02/18/2018 11:33:43</publishTime>
+    </File>
+    <File Include="bin/ISE.UILibrary.dll">
+      <publishTime>01/26/2015 08:33:26</publishTime>
+    </File>
+    <File Include="bin/Oracle.DataAccess.dll">
+      <publishTime>07/29/2010 13:57:58</publishTime>
+    </File>
+    <File Include="bin/Router.Contracts.dll">
+      <publishTime>10/25/2016 11:22:26</publishTime>
+    </File>
+    <File Include="bin/SLF.dll">
+      <publishTime>10/25/2016 11:22:26</publishTime>
+    </File>
+    <File Include="bin/Telerik.OpenAccess.35.Extensions.dll">
+      <publishTime>10/27/2014 10:11:18</publishTime>
+    </File>
+    <File Include="bin/WcfService1.dll">
+      <publishTime>02/18/2018 11:33:43</publishTime>
+    </File>
+    <File Include="Service1.svc">
+      <publishTime>01/31/2018 10:18:41</publishTime>
+    </File>
+    <File Include="Service2.svc">
+      <publishTime>01/31/2018 10:20:10</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/18/2018 11:33:44</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

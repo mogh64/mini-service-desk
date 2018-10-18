@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8EA34B31-A8BA-4A58-9589-7E2F62E8DE4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ISE.ServiceDesk.Client</RootNamespace>
+    <AssemblyName>ISE.ServiceDesk.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\ClientRelease\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ISE.Cartable.BR, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Ise\ISEDLL\ISE.Cartable.BR.dll</HintPath>
+    </Reference>
+    <Reference Include="ISE.Cartable.DE, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Ise\ISEDLL\ISE.Cartable.DE.dll</HintPath>
+    </Reference>
+    <Reference Include="ISE.Cartable.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Ise\ISEDLL\ISE.Cartable.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="ISE.ClassLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ClientRelease\ISE.ClassLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ISE.Framework.Client.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ClientRelease\ISE.Framework.Client.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ISE.Framework.Client.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ClientRelease\ISE.Framework.Client.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="ISE.Framework.Client.Win, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ClientRelease\ISE.Framework.Client.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="ISE.Framework.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ClientRelease\ISE.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ISE.Framework.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ClientRelease\ISE.Framework.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="ISE.UILibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ClientRelease\ISE.UILibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Data.v3, Version=3.5.112.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ClientRelease\Janus\Janus.Data.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v3, Version=3.5.112.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ClientRelease\Janus\Janus.Windows.Common.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.5.112.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ClientRelease\Janus\Janus.Windows.GridEX.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2015.3.930.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entry\UCAddAttachment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCAddAttachment.Designer.cs">
+      <DependentUpon>UCAddAttachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCAssignServiceJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCAssignServiceJob.Designer.cs">
+      <DependentUpon>UCAssignServiceJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCAssignServiceToJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCAssignServiceToJob.Designer.cs">
+      <DependentUpon>UCAssignServiceToJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCChangeRole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCChangeRole.Designer.cs">
+      <DependentUpon>UCChangeRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCExpertEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCExpertEdit.Designer.cs">
+      <DependentUpon>UCExpertEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCExperts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCExperts.Designer.cs">
+      <DependentUpon>UCExperts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCReports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCReports.Designer.cs">
+      <DependentUpon>UCReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCRequestWork.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCRequestWork.Designer.cs">
+      <DependentUpon>UCRequestWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCRequestEntry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCRequestEntry.Designer.cs">
+      <DependentUpon>UCRequestEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCItServices.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCItServices.Designer.cs">
+      <DependentUpon>UCItServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCRoleEntry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCRoleEntry.Designer.cs">
+      <DependentUpon>UCRoleEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCSelectServiceCategoryJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCSelectServiceCategoryJob.Designer.cs">
+      <DependentUpon>UCSelectServiceCategoryJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCServiceCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCServiceCategory.Designer.cs">
+      <DependentUpon>UCServiceCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCServiceCatJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCServiceCatJob.Designer.cs">
+      <DependentUpon>UCServiceCatJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCServiceJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCServiceJob.Designer.cs">
+      <DependentUpon>UCServiceJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCTest.Designer.cs">
+      <DependentUpon>UCTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCUserRequestView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCUserRequestView.Designer.cs">
+      <DependentUpon>UCUserRequestView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCWeight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCWeight.Designer.cs">
+      <DependentUpon>UCWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCWorkEntry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCWorkEntry.Designer.cs">
+      <DependentUpon>UCWorkEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry\UCWorkList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Entry\UCWorkList.Designer.cs">
+      <DependentUpon>UCWorkList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Types\PersonDevice.cs" />
+    <Compile Include="UCRequestList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCRequestList.Designer.cs">
+      <DependentUpon>UCRequestList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCRequestManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCRequestManagement.Designer.cs">
+      <DependentUpon>UCRequestManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ServiceCategoryJobView.cs" />
+    <Compile Include="View\ServiceJobView.cs" />
+    <Compile Include="View\UserRequestView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ISE.ServiceDesk.Client.Common\ISE.ServiceDesk.Client.Common.csproj">
+      <Project>{167dd1fb-e98a-4613-8961-e33c78f390bb}</Project>
+      <Name>ISE.ServiceDesk.Client.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISE.ServiceDesk.Common\ISE.ServiceDesk.Common.csproj">
+      <Project>{0d993e74-4adf-41da-a019-8c3b21353e75}</Project>
+      <Name>ISE.ServiceDesk.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Entry\UCAddAttachment.resx">
+      <DependentUpon>UCAddAttachment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCAssignServiceJob.resx">
+      <DependentUpon>UCAssignServiceJob.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCAssignServiceToJob.resx">
+      <DependentUpon>UCAssignServiceToJob.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCChangeRole.resx">
+      <DependentUpon>UCChangeRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCExpertEdit.resx">
+      <DependentUpon>UCExpertEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCExperts.resx">
+      <DependentUpon>UCExperts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCReports.resx">
+      <DependentUpon>UCReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCRequestWork.resx">
+      <DependentUpon>UCRequestWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCRequestEntry.resx">
+      <DependentUpon>UCRequestEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCItServices.resx">
+      <DependentUpon>UCItServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCRoleEntry.resx">
+      <DependentUpon>UCRoleEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCSelectServiceCategoryJob.resx">
+      <DependentUpon>UCSelectServiceCategoryJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCServiceCategory.resx">
+      <DependentUpon>UCServiceCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCServiceCatJob.resx">
+      <DependentUpon>UCServiceCatJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCServiceJob.resx">
+      <DependentUpon>UCServiceJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCTest.resx">
+      <DependentUpon>UCTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCUserRequestView.resx">
+      <DependentUpon>UCUserRequestView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCWeight.resx">
+      <DependentUpon>UCWeight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCWorkEntry.resx">
+      <DependentUpon>UCWorkEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry\UCWorkList.resx">
+      <DependentUpon>UCWorkList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="UCRequestList.resx">
+      <DependentUpon>UCRequestList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCRequestManagement.resx">
+      <DependentUpon>UCRequestManagement.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

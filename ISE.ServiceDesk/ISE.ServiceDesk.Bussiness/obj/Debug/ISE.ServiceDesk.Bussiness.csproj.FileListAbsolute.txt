@@ -1,0 +1,10 @@
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ServerRelease\ISE.ServiceDesk.Bussiness.dll
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ServerRelease\ISE.ServiceDesk.Bussiness.pdb
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ISE.ServiceDesk.Bussiness\obj\Debug\ISE.ServiceDesk.Bussiness.csprojResolveAssemblyReference.cache
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ISE.ServiceDesk.Bussiness\obj\Debug\ISE.ServiceDesk.Bussiness.dll
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ISE.ServiceDesk.Bussiness\obj\Debug\ISE.ServiceDesk.Bussiness.pdb
+E:\ISECollection\ISE.ServiceDesk\ServerRelease\ISE.ServiceDesk.Bussiness.dll
+E:\ISECollection\ISE.ServiceDesk\ServerRelease\ISE.ServiceDesk.Bussiness.pdb
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Bussiness\obj\Debug\ISE.ServiceDesk.Bussiness.csprojResolveAssemblyReference.cache
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Bussiness\obj\Debug\ISE.ServiceDesk.Bussiness.dll
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Bussiness\obj\Debug\ISE.ServiceDesk.Bussiness.pdb

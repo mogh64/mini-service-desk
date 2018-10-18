@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD4DFD68-5853-48F4-B06D-3F27DE888657}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ISE.ServiceDesk.DataAccess</RootNamespace>
+    <AssemblyName>ISE.ServiceDesk.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\ServerRelease\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ISE.Framework.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ServerRelease\ISE.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ISE.Framework.Server.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ServerRelease\ISE.Framework.Server.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ISE.Framework.Server.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ServerRelease\ISE.Framework.Server.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ISE.Framework.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ServerRelease\ISE.Framework.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ServerRelease\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.OpenAccess, Version=2014.3.1027.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.OpenAccess.35.Extensions, Version=2014.3.1027.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.OpenAccess.40.Extensions, Version=2014.3.1027.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDataTDataAccess.cs" />
+    <Compile Include="ExpertTDataAccess.cs" />
+    <Compile Include="FilterCategoryTDataAccess.cs" />
+    <Compile Include="OfficeTDataAccess.cs" />
+    <Compile Include="PersonelTDataAccess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestAssignedExpertTDataAccess.cs" />
+    <Compile Include="RequestAttachmentTDataAccess.cs" />
+    <Compile Include="RequestWorkTDataAccess.cs" />
+    <Compile Include="RoleExpertTDataAccess.cs" />
+    <Compile Include="SdRoleTDataAccess.cs" />
+    <Compile Include="SdWorkTDataAccess.cs" />
+    <Compile Include="ServiceCategoryJobTDataAccess.cs" />
+    <Compile Include="ServiceCategoryTDataAccess.cs" />
+    <Compile Include="ServiceJobTDataAccess.cs" />
+    <Compile Include="UserRequestTDataAccess.cs" />
+    <Compile Include="VwHokmTDataAccess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ISE.ServiceDesk.Common\ISE.ServiceDesk.Common.csproj">
+      <Project>{0d993e74-4adf-41da-a019-8c3b21353e75}</Project>
+      <Name>ISE.ServiceDesk.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISE.ServiceDesk.Model\ISE.ServiceDesk.Model.csproj">
+      <Project>{e545c6ed-d805-47bc-acc1-a19cb08cc3dc}</Project>
+      <Name>ISE.ServiceDesk.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

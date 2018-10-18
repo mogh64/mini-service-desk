@@ -1,0 +1,9 @@
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ClientRelease\ISE.ServiceDesk.Client.Common.dll
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ClientRelease\ISE.ServiceDesk.Client.Common.pdb
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ISE.ServiceDesk.Client.Common\obj\Debug\ISE.ServiceDesk.Client.Common.dll
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ISE.ServiceDesk.Client.Common\obj\Debug\ISE.ServiceDesk.Client.Common.pdb
+E:\ISECollection\ISE.ServiceDesk\ClientRelease\ISE.ServiceDesk.Client.Common.dll
+E:\ISECollection\ISE.ServiceDesk\ClientRelease\ISE.ServiceDesk.Client.Common.pdb
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client.Common\obj\Debug\ISE.ServiceDesk.Client.Common.csprojResolveAssemblyReference.cache
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client.Common\obj\Debug\ISE.ServiceDesk.Client.Common.dll
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Client.Common\obj\Debug\ISE.ServiceDesk.Client.Common.pdb

@@ -1,0 +1,13 @@
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Common\bin\Release\ISE.ServiceDesk.Common.dll
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Common\bin\Release\ISE.ServiceDesk.Common.pdb
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Common\bin\Release\ISE.ClassLibrary.dll
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Common\bin\Release\ISE.Framework.Common.dll
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Common\bin\Release\ISE.Framework.Utility.dll
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Common\bin\Release\SLF.dll
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Common\bin\Release\EmitMapper.dll
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Common\bin\Release\ISE.UILibrary.dll
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Common\bin\Release\ISE.Framework.Common.pdb
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Common\bin\Release\ISE.Framework.Utility.pdb
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Common\obj\Release\ISE.ServiceDesk.Common.csprojResolveAssemblyReference.cache
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Common\obj\Release\ISE.ServiceDesk.Common.dll
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Common\obj\Release\ISE.ServiceDesk.Common.pdb

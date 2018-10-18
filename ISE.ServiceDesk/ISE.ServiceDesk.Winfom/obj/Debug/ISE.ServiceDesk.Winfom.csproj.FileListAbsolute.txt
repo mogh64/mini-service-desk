@@ -1,0 +1,23 @@
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ClientRelease\ISE.ServiceDesk.Winfom.exe.config
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ClientRelease\ISE.ServiceDesk.Winfom.exe
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ClientRelease\ISE.ServiceDesk.Winfom.pdb
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ISE.ServiceDesk.Winfom\obj\Debug\ISE.ServiceDesk.Winfom.csprojResolveAssemblyReference.cache
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ISE.ServiceDesk.Winfom\obj\Debug\ISE.ServiceDesk.Winfom.Properties.Resources.resources
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ISE.ServiceDesk.Winfom\obj\Debug\ISE.ServiceDesk.Winfom.csproj.GenerateResource.Cache
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ISE.ServiceDesk.Winfom\obj\Debug\ISE.ServiceDesk.Winfom.exe
+c:\users\p92000711\documents\visual studio 2013\Projects\ISE.ServiceDesk\ISE.ServiceDesk.Winfom\obj\Debug\ISE.ServiceDesk.Winfom.pdb
+E:\ISECollection\ISE.ServiceDesk\ClientRelease\ISE.ServiceDesk.Winfom.exe.config
+E:\ISECollection\ISE.ServiceDesk\ClientRelease\ISE.ServiceDesk.Winfom.exe
+E:\ISECollection\ISE.ServiceDesk\ClientRelease\ISE.ServiceDesk.Winfom.pdb
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Winfom\obj\Debug\ISE.ServiceDesk.Winfom.csprojResolveAssemblyReference.cache
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Winfom\obj\Debug\ISE.ServiceDesk.Winfom.Properties.Resources.resources
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Winfom\obj\Debug\ISE.ServiceDesk.Winfom.csproj.GenerateResource.Cache
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Winfom\obj\Debug\ISE.ServiceDesk.Winfom.exe
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Winfom\obj\Debug\ISE.ServiceDesk.Winfom.pdb
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Winfom\obj\Debug\ISE.ServiceDesk.Winfom.Form1.resources
+E:\ISECollection\ISE.ServiceDesk\ClientRelease\Behaviors.config
+E:\ISECollection\ISE.ServiceDesk\ClientRelease\Bindings.config
+E:\ISECollection\ISE.ServiceDesk\ClientRelease\ClientEndpoints.config
+E:\ISECollection\ISE.ServiceDesk\ClientRelease\Types.config
+E:\ISECollection\ISE.ServiceDesk\ClientRelease\App.config
+E:\ISECollection\ISE.ServiceDesk\ISE.ServiceDesk.Winfom\obj\Debug\ISE.ServiceDesk.Winfom.ActionIdForm.resources

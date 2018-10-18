@@ -1,0 +1,1658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DomainModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="2.0.0.0" name="EntitiesModel1" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" xmlns="http://www.telerik.com/ORM">
+  <orm:orm name="EntitiesModel1" backend="oracle" default-schema="ISECOMPUTER" xmlns:orm="http://tempuri.org/ORM">
+    <orm:namespace name="ISE.ServiceDesk.Model" default="true">
+      <orm:class name="SdUserRequest" uniqueId="e406132d-4e89-4820-89a3-2dff52840eb4">
+        <orm:table name="SD_USER_REQUEST" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="SerReqId" />
+          </orm:key-generator>
+          <orm:single-field field-name="_serreqid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_serreqid" property="SerReqId" behavior="readwrite" uniqueId="43d14d2c-5f0a-4a0c-8f48-6408e5e83ef9" type="System.Int32">
+          <orm:column name="SER_REQ_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_createdate" property="Createdate" behavior="readwrite" uniqueId="84d81267-530c-4fde-8048-9c6470f2a4a2" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="CREATEDATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_currentstateid" property="Currentstateid" behavior="readwrite" uniqueId="7b23f6a2-3c3f-4333-aab1-2ac894e2557a" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="CURRENTSTATEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_creditdate" property="Creditdate" behavior="readwrite" uniqueId="a74eb4a2-f853-4ad3-9717-2eaa7b363ccd" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="CREDITDATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_createuserid" property="Createuserid" behavior="readwrite" uniqueId="f4d35c6f-40d1-45d0-9676-bdbeaef8a8c3" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="CREATEUSERID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_owneruserid" property="Owneruserid" behavior="readwrite" uniqueId="4e0fea02-cd86-4a73-8797-dd95eddf6412" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="OWNERUSERID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_servicecategoryjobid" property="Servicecategoryjobid" behavior="readwrite" uniqueId="0db102f8-dcfc-462b-a75d-c6359dd2104d" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="SERVICECATEGORYJOBID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_description" property="Description" behavior="readwrite" uniqueId="9e366150-2987-4321-b966-7006f6ba2f4e" type="System.String">
+          <orm:column name="DESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_startdate" property="Startdate" behavior="readwrite" uniqueId="47dcff1f-41d6-4006-8dae-62b675b8417d" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="STARTDATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_callnumber" property="Callnumber" behavior="readwrite" uniqueId="ba103faa-8f73-411f-8f3f-4ea23fe95b81" type="System.String">
+          <orm:column name="CALLNUMBER" sql-type="VARCHAR2" nullable="true" length="15" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_menuitemid" property="Menuitemid" behavior="readwrite" uniqueId="ed2e1ba0-ae1c-4353-95c0-41374896dfea" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="MENUITEMID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_enddate" property="Enddate" behavior="readwrite" uniqueId="f36076dd-8a14-4aca-8ec8-f60bfb1f7651" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ENDDATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_minestimatetime" property="Minestimatetime" behavior="readwrite" uniqueId="a0476d80-a9d8-4290-b664-6af2336ff8e8" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="MINESTIMATETIME" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_maxestimatetime" property="Maxestimatetime" behavior="readwrite" uniqueId="605d8591-6ba8-420f-a746-812368ee0e67" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="MAXESTIMATETIME" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_transferid" property="Transferid" behavior="readwrite" uniqueId="cbdb1a28-118e-44bc-9e72-bd0a94e6540b" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="TRANSFERID" sql-type="NUMBER" nullable="true" length="9" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_groupingnumber" property="Groupingnumber" behavior="readwrite" uniqueId="954104b3-d239-48a6-be44-2c412f83f4d7" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="GROUPINGNUMBER" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_finalservicecategoryjobid" property="Finalservicecategoryjobid" behavior="readwrite" uniqueId="c5985d22-c7bf-4a57-8d36-2bc9ce50065e" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="FINALSERVICECATEGORYJOBID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_finaldescription" property="Finaldescription" behavior="readwrite" uniqueId="d3b23427-a3e4-4930-b8cb-c40db395e04b" type="System.String">
+          <orm:column name="FINALDESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_ownerchartid" property="OwnerChartId" behavior="readwrite" uniqueId="165afdc8-c5dc-4244-9496-2129c10c5230" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="OWNER_CHART_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_expiredate" property="ExpireDate" behavior="readwrite" uniqueId="dd7f991e-09be-4c89-918f-c5b7708eb31e" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="EXPIRE_DATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_priority" property="Priority" behavior="readwrite" uniqueId="a2d96cfb-fb26-49df-a28c-fa69f950e69b" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="PRIORITY" sql-type="NUMBER" nullable="true" length="3" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_sdrequeststate" property="Sdrequeststate" behavior="readwrite" uniqueId="c06499b3-0db8-4529-b73d-ffc391906e08" type="ISE.ServiceDesk.Model.SdRequestState">
+          <orm:reference uniqueId="0609af47-a848-4449-8661-aeaf8367fe6b" association-name="SdUserRequestHasSdRequestState">
+            <orm:sharedfield name="_currentstateid" target-class="ISE.ServiceDesk.Model.SdRequestState" target-field="_sdreqstateid" />
+            <orm:constraint name="FKEY_REQUEST_STATE" delete-action="dbdefaultrule" destination-table="SD_REQUEST_STATE" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_sdrequestattachments" property="SdRequestAttachments" behavior="readwrite" uniqueId="c165bced-93cc-46ac-826e-4c5060939dcc" type="ISE.ServiceDesk.Model.SdRequestAttachment">
+          <orm:collection element-class="ISE.ServiceDesk.Model.SdRequestAttachment" inverse-field="_sduserrequest" order-by="" uniqueId="21851576-9184-473f-bb39-4f02606214ef" />
+        </orm:field>
+        <orm:field name="_sdrequestworks" property="SdRequestWorks" behavior="readwrite" uniqueId="1654c02f-5903-4b23-9b19-154f1bbb8fc0" type="ISE.ServiceDesk.Model.SdRequestWork">
+          <orm:collection element-class="ISE.ServiceDesk.Model.SdRequestWork" inverse-field="_sduserrequest" order-by="" uniqueId="87d86c5d-f0b7-4177-978e-1252d8d06cb2" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="SdServiceJob" uniqueId="efc1fe14-9c50-43fd-bafc-d167f9829963">
+        <orm:table name="SD_SERVICE_JOB" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="ServiceJobId" />
+          </orm:key-generator>
+          <orm:single-field field-name="_servicejobid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_servicejobid" property="ServiceJobId" behavior="readwrite" uniqueId="513d09c1-d3c4-491d-b3b4-8cf4ddafb4f9" type="System.Int32">
+          <orm:column name="SERVICE_JOB_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_title" property="Title" behavior="readwrite" uniqueId="f992c542-4df2-48cb-a2da-6e33ef8f14b8" type="System.String">
+          <orm:column name="TITLE" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_description" property="Description" behavior="readwrite" uniqueId="9d86d697-4648-4ec3-b263-71a0f09c25e5" type="System.String">
+          <orm:column name="DESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_enabled" property="Enabled" behavior="readwrite" uniqueId="af0b36a7-1526-4ad0-9cd1-9b5504a7d228" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ENABLED" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_sdservicecategoryjobs" property="SdServiceCategoryJobs" behavior="readwrite" uniqueId="c17186d7-58e7-448a-8323-fcafe8ed069b" type="ISE.ServiceDesk.Model.SdServiceCategoryJob">
+          <orm:collection element-class="ISE.ServiceDesk.Model.SdServiceCategoryJob" inverse-field="_sdservicejob" order-by="" uniqueId="eaa0fe53-f561-4599-a208-77c8b9d1bc99" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="SdServiceCategoryJob" uniqueId="12e15656-d0af-45ee-bcf4-f08dfc030cc7">
+        <orm:table name="SD_SERVICE_CATEGORY_JOB" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="ServiceCatJobId" />
+          </orm:key-generator>
+          <orm:single-field field-name="_servicecatjobid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_servicecatjobid" property="ServiceCatJobId" behavior="readwrite" uniqueId="cef3645c-39a1-4083-bf2c-ee241ccf5b61" type="System.Int32">
+          <orm:column name="SERVICE_CAT_JOB_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_servicecategoryid" property="Servicecategoryid" behavior="readwrite" uniqueId="a3287584-3a92-48f8-86d2-84a607705664" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="SERVICECATEGORYID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_servicejobid" property="Servicejobid" behavior="readwrite" uniqueId="d0832b16-c70b-4a3c-9c21-c3f43ec37671" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="SERVICEJOBID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_actionid" property="Actionid" behavior="readwrite" uniqueId="abe84d19-236a-45ff-a8ea-32c99c2066bd" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ACTIONID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_hasattachment" property="Hasattachment" behavior="readwrite" uniqueId="cb1088bf-0bc3-44c5-aa40-70c2025ae1f5" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="HASATTACHMENT" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_hasdescription" property="Hasdescription" behavior="readwrite" uniqueId="5a58b1f1-3fff-45d3-9b25-3edd22f6d435" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="HASDESCRIPTION" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_roleid" property="Roleid" behavior="readwrite" uniqueId="7c448cc1-6f36-47c8-b04b-6d0dbd2a9b30" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ROLEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_hascreditdate" property="Hascreditdate" behavior="readwrite" uniqueId="9ea61c21-550d-4b92-990f-751324205301" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="HASCREDITDATE" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_estimatetimecost" property="Estimatetimecost" behavior="readwrite" uniqueId="9cf0ae80-041e-4d67-a4eb-05df3faa1ef1" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ESTIMATETIMECOST" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_isintree" property="Isintree" behavior="readwrite" uniqueId="b7246fbd-14c3-40b0-a37b-fa59c83bf470" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ISINTREE" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_precedence" property="Precedence" behavior="readwrite" uniqueId="14912bd8-3a28-49ec-9733-c7f5131773e9" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="PRECEDENCE" sql-type="NUMBER" nullable="true" length="3" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_multirequest" property="Multirequest" behavior="readwrite" uniqueId="24037fde-3d96-4aac-bbd9-ba3d2d0b2577" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="MULTIREQUEST" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_isinserter" property="IsInserter" behavior="readwrite" uniqueId="1cab9b05-525d-4991-972e-ddfc06c8d25e" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="IS_INSERTER" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_enabled" property="Enabled" behavior="readwrite" uniqueId="6842c7a2-7b6f-4a3a-a38d-9d22b2996dc4" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ENABLED" sql-type="NUMBER" nullable="true" length="1" scale="0" has-default-value="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_sdservicejob" property="Sdservicejob" behavior="readwrite" uniqueId="4d36dc71-5927-4c63-966a-ed6379245195" type="ISE.ServiceDesk.Model.SdServiceJob">
+          <orm:reference uniqueId="eaa0fe53-f561-4599-a208-77c8b9d1bc99" association-name="SdServiceCategoryJobHasSdServiceJob">
+            <orm:sharedfield name="_servicejobid" target-class="ISE.ServiceDesk.Model.SdServiceJob" target-field="_servicejobid" />
+            <orm:constraint name="FKEY_SERVICECATJOB_SERVJOB" delete-action="dbdefaultrule" destination-table="SD_SERVICE_JOB" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_sditrole" property="Sditrole" behavior="readwrite" uniqueId="065b0856-0e73-49b4-92f4-7f5be483b8df" type="ISE.ServiceDesk.Model.SdItRole">
+          <orm:reference uniqueId="4e721150-f003-4efd-9c92-9ac65cec8a6c" association-name="SdServiceCategoryJobHasSdItRole">
+            <orm:sharedfield name="_roleid" target-class="ISE.ServiceDesk.Model.SdItRole" target-field="_roleid" />
+            <orm:constraint name="FKEY_SERVICE_CAT_JOB_ROLE" delete-action="dbdefaultrule" destination-table="SD_IT_ROLE" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_sdservicecategory" property="Sdservicecategory" behavior="readwrite" uniqueId="3896b72d-ee64-434b-bb47-264a122610cd" type="ISE.ServiceDesk.Model.SdServiceCategory">
+          <orm:reference uniqueId="5dd93d21-005b-44c4-91b9-8e01879e77e4" association-name="SdServiceCategoryJobHasSdServiceCategory">
+            <orm:sharedfield name="_servicecategoryid" target-class="ISE.ServiceDesk.Model.SdServiceCategory" target-field="_servicecatid" />
+            <orm:constraint name="FKEY_SERVICCATJO_SERVICECAT" delete-action="dbdefaultrule" destination-table="SD_SERVICE_CATEGORY" />
+          </orm:reference>
+        </orm:field>
+      </orm:class>
+      <orm:class name="SdServiceCategory" uniqueId="1574e836-ea24-4c97-91d3-f85b453d2669">
+        <orm:table name="SD_SERVICE_CATEGORY" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="ServiceCatId" />
+          </orm:key-generator>
+          <orm:single-field field-name="_servicecatid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_servicecatid" property="ServiceCatId" behavior="readwrite" uniqueId="7301313b-9d19-4263-b897-5880622b9f6b" type="System.Int32">
+          <orm:column name="SERVICE_CAT_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_title" property="Title" behavior="readwrite" uniqueId="57970933-d7b0-438c-a1af-74b798ef1a69" type="System.String">
+          <orm:column name="TITLE" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_description" property="Description" behavior="readwrite" uniqueId="2956be78-6dd4-454a-95ad-acba7aa3f49f" type="System.String">
+          <orm:column name="DESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_enabled" property="Enabled" behavior="readwrite" uniqueId="c1d44646-e9dd-4f4a-b6a2-e27fb0e521cb" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ENABLED" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_parentid" property="Parentid" behavior="readwrite" uniqueId="5bbb94aa-0d81-474e-baa7-16d4ca8ac320" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="PARENTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_hasjob" property="Hasjob" behavior="readwrite" uniqueId="14a7585a-ccc7-4c30-8343-a97da50b8e0d" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="HASJOB" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_hasfilter" property="Hasfilter" behavior="readwrite" uniqueId="70324b2a-9ea9-4293-bf22-14d361028353" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="HASFILTER" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_hasmenu" property="Hasmenu" behavior="readwrite" uniqueId="7cc3cc84-1bb8-487f-9dee-03e135535b9a" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="HASMENU" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_hasdevice" property="Hasdevice" behavior="readwrite" uniqueId="17e4f421-b3ea-445d-a903-d6d44677ffa0" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="HASDEVICE" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_sdworks" property="SdWorks" behavior="readwrite" uniqueId="e0687129-ebb3-4d2a-8cd5-ebdd85b95246" type="ISE.ServiceDesk.Model.SdWork">
+          <orm:collection element-class="ISE.ServiceDesk.Model.SdWork" inverse-field="_sdservicecategory" order-by="" uniqueId="80c757e1-602d-4448-a01c-9e40e8eac8c4" />
+        </orm:field>
+        <orm:field name="_sdservicecategoryjobs" property="SdServiceCategoryJobs" behavior="readwrite" uniqueId="83a1ffdb-b175-44ab-ba48-f3da755c2bf1" type="ISE.ServiceDesk.Model.SdServiceCategoryJob">
+          <orm:collection element-class="ISE.ServiceDesk.Model.SdServiceCategoryJob" inverse-field="_sdservicecategory" order-by="" uniqueId="5dd93d21-005b-44c4-91b9-8e01879e77e4" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="SdRequestState" uniqueId="3f31464c-3f3b-4a04-9141-00f374d80af6">
+        <orm:table name="SD_REQUEST_STATE" />
+        <orm:identity>
+          <orm:single-field field-name="_sdreqstateid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_sdreqstateid" property="SdReqStateId" behavior="readwrite" uniqueId="d62eeb7b-d94d-4bdb-bc0a-d233c8e86541" type="System.Int32">
+          <orm:column name="SD_REQ_STATE_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_statetitle" property="StateTitle" behavior="readwrite" uniqueId="7ca93b7a-edd8-4303-ba1d-75534f6e534a" type="System.String">
+          <orm:column name="STATE_TITLE" sql-type="VARCHAR2" nullable="true" length="50" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_sduserrequests" property="SdUserRequests" behavior="readwrite" uniqueId="0f2ca2b2-c85b-42ef-bf47-62561ec3a15e" type="ISE.ServiceDesk.Model.SdUserRequest">
+          <orm:collection element-class="ISE.ServiceDesk.Model.SdUserRequest" inverse-field="_sdrequeststate" order-by="" uniqueId="0609af47-a848-4449-8661-aeaf8367fe6b" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="SdRequestProcess" uniqueId="ce0cca31-2953-4bea-8e7c-a12f43e700ce">
+        <orm:table name="SD_REQUEST_PROCESS" />
+        <orm:identity>
+          <orm:single-field field-name="_reqprocessid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_reqprocessid" property="ReqProcessId" behavior="readwrite" uniqueId="0423ce8b-4be6-462c-b1ec-ae5f6ff50836" type="System.Int32">
+          <orm:column name="REQ_PROCESS_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_servicecategoryjobid" property="Servicecategoryjobid" behavior="readwrite" uniqueId="7c6ad08a-6560-4111-89bc-fa3c9c42f47f" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="SERVICECATEGORYJOBID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_description" property="Description" behavior="readwrite" uniqueId="a18ca399-9631-4025-9a19-6df7dec9d2b6" type="System.String">
+          <orm:column name="DESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_processdate" property="Processdate" behavior="readwrite" uniqueId="068cbba7-f841-41e9-9f8c-0fe7c9233f83" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="PROCESSDATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_itexpertid" property="Itexpertid" behavior="readwrite" uniqueId="ffcc6b93-a0f6-4d83-8842-362f85020771" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ITEXPERTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_timecost" property="Timecost" behavior="readwrite" uniqueId="8c771ee8-c9a7-4591-87ef-d347a23109dd" type="System.Nullable`1[[System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="TIMECOST" sql-type="NUMBER" nullable="true" length="22" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_requestid" property="Requestid" behavior="readwrite" uniqueId="0e5a635d-d19e-47ca-8462-cf330b984e74" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="REQUESTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_financialcost" property="Financialcost" behavior="readwrite" uniqueId="c28a6154-ddfc-4bf3-bbd2-307e930feb59" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="FINANCIALCOST" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="SdRequestAttachment" uniqueId="d10279a4-f5d8-4385-ac10-4d1e80e9fd56">
+        <orm:table name="SD_REQUEST_ATTACHMENT" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="ReuestAttachId" />
+          </orm:key-generator>
+          <orm:single-field field-name="_reuestattachid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_reuestattachid" property="ReuestAttachId" behavior="readwrite" uniqueId="b1d2715b-c008-47ad-91dd-a985b78bdd85" type="System.Int32">
+          <orm:column name="REUEST_ATTACH_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_requestid" property="Requestid" behavior="readwrite" uniqueId="973e9f3b-8b71-4377-a0ab-582e2309b70e" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="REQUESTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_filetype" property="Filetype" behavior="readwrite" uniqueId="e5068033-6a5c-4624-a94b-6ebd11ab8923" type="System.String">
+          <orm:column name="FILETYPE" sql-type="VARCHAR2" nullable="true" length="5" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_filename" property="Filename" behavior="readwrite" uniqueId="5e1f3965-963f-4304-82e8-3b4e51256298" type="System.String">
+          <orm:column name="FILENAME" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_description" property="Description" behavior="readwrite" uniqueId="050df0d6-1628-4a12-9b32-edb1a54c338d" type="System.String">
+          <orm:column name="DESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_content" property="Content" behavior="readwrite" uniqueId="4a481762-2fb7-4d76-8e69-128893bf4103" type="System.Byte[]">
+          <orm:column name="CONTENT" sql-type="BLOB" nullable="true" length="0" scale="0" ado-type="Blob" />
+        </orm:field>
+        <orm:field name="_sduserrequest" property="Sduserrequest" behavior="readwrite" uniqueId="2a34bb20-0829-418d-b1b4-c4dc6ab65789" type="ISE.ServiceDesk.Model.SdUserRequest">
+          <orm:reference uniqueId="21851576-9184-473f-bb39-4f02606214ef" association-name="SdRequestAttachmentHasSdUserRequest">
+            <orm:sharedfield name="_requestid" target-class="ISE.ServiceDesk.Model.SdUserRequest" target-field="_serreqid" />
+            <orm:constraint name="REQUEST_ATTACH_FKEY" delete-action="dbdefaultrule" destination-table="SD_USER_REQUEST" />
+          </orm:reference>
+        </orm:field>
+      </orm:class>
+      <orm:class name="SdRequestAssignedExpert" uniqueId="e5fe4345-87d7-46e3-a74d-fbe0fe1101c7">
+        <orm:table name="SD_REQUEST_ASSIGNED_EXPERT" />
+        <orm:identity>
+          <orm:single-field field-name="_reqiestexpertid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_reqiestexpertid" property="ReqiestExpertId" behavior="readwrite" uniqueId="87bddc5a-1269-40f2-ac25-f38f5e2bd43e" type="System.Int32">
+          <orm:column name="REQIEST_EXPERT_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_requestid" property="Requestid" behavior="readwrite" uniqueId="32f95dd2-2238-4895-9104-75cf8ee7013a" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="REQUESTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_assigndate" property="Assigndate" behavior="readwrite" uniqueId="dc204444-3f21-485f-8301-b37c3b35dad3" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ASSIGNDATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_assigntype" property="Assigntype" behavior="readwrite" uniqueId="e6c24666-6db4-4217-bb96-83ce273343ef" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ASSIGNTYPE" sql-type="NUMBER" nullable="true" length="2" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_ishead" property="Ishead" behavior="readwrite" uniqueId="d1181d3b-e187-4579-9de7-acfaaed1e8a9" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ISHEAD" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_expertperid" property="ExpertPerId" behavior="readwrite" uniqueId="1ecb6f8d-404a-4a97-9763-bc0a1fe0bc79" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="EXPERT_PER_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="SdOffice" uniqueId="692952a3-be8b-437c-b68a-fefdaf4b57ad">
+        <orm:table name="SD_OFFICE" />
+        <orm:identity>
+          <orm:single-field field-name="_officeid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_officeid" property="OfficeId" behavior="readwrite" uniqueId="c3c1e103-a53b-4152-8af3-9c7c49e62b22" type="System.Int32">
+          <orm:column name="OFFICE_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_title" property="Title" behavior="readwrite" uniqueId="dcc2e6b6-bf1c-4550-875b-4d6190ada560" type="System.String">
+          <orm:column name="TITLE" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_sditexperts" property="SdItExperts" behavior="readwrite" uniqueId="8e551038-259e-4a05-901e-1e67844b5ae0" type="ISE.ServiceDesk.Model.SdItExpert">
+          <orm:collection element-class="ISE.ServiceDesk.Model.SdItExpert" inverse-field="_sdoffice" order-by="" uniqueId="8c1094f0-3d12-459f-a234-a40780d07c6f" />
+        </orm:field>
+        <orm:field name="_sditroles" property="SdItRoles" behavior="readwrite" uniqueId="85239d96-ff57-4aab-bc75-c5a0be07f4b8" type="ISE.ServiceDesk.Model.SdItRole">
+          <orm:collection element-class="ISE.ServiceDesk.Model.SdItRole" inverse-field="_sdoffice" order-by="" uniqueId="bc05dc3a-e6df-48a9-b54d-d92d40bd802a" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="SdItRoleExpert" uniqueId="d3891923-210b-4fce-aee6-642253f820f9">
+        <orm:table name="SD_IT_ROLE_EXPERT" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="RoleExpertId" />
+          </orm:key-generator>
+          <orm:single-field field-name="_roleexpertid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_roleexpertid" property="RoleExpertId" behavior="readwrite" uniqueId="39b098c2-3cd6-4f2a-8309-67dcb2014a97" type="System.Int32">
+          <orm:column name="ROLE_EXPERT_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_expertid" property="Expertid" behavior="readwrite" uniqueId="56637a5d-e379-4aa4-ae73-4ca42526c3c8" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="EXPERTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_itroleid" property="Itroleid" behavior="readwrite" uniqueId="e583301d-8180-4f76-b25d-a56c2ce8a379" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ITROLEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_weight" property="Weight" behavior="readwrite" uniqueId="a07dd551-b107-41d9-999b-a4ee9f25b3bb" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="WEIGHT" sql-type="NUMBER" nullable="true" length="3" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_sditrole" property="Sditrole" behavior="readwrite" uniqueId="d36fb4f1-0a4a-44da-9470-b09a6797a2ce" type="ISE.ServiceDesk.Model.SdItRole">
+          <orm:reference uniqueId="6c9e4f5a-7880-4732-b782-199713a64d72" association-name="SdItRoleExpertHasSdItRole">
+            <orm:sharedfield name="_itroleid" target-class="ISE.ServiceDesk.Model.SdItRole" target-field="_roleid" />
+            <orm:constraint name="FKEY_ITROLEID_EXPERT" delete-action="dbdefaultrule" destination-table="SD_IT_ROLE" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_sditexpert" property="Sditexpert" behavior="readwrite" uniqueId="ae72ba16-ab19-4aa4-8813-79c42ffcc5cc" type="ISE.ServiceDesk.Model.SdItExpert">
+          <orm:reference uniqueId="5327eee9-400a-4aa8-8e93-735dbb374c92" association-name="SdItRoleExpertHasSdItExpert">
+            <orm:sharedfield name="_expertid" target-class="ISE.ServiceDesk.Model.SdItExpert" target-field="_itexpertid" />
+            <orm:constraint name="FKEY_EXPERTID_EXPERTROLE" delete-action="dbdefaultrule" destination-table="SD_IT_EXPERT" />
+          </orm:reference>
+        </orm:field>
+      </orm:class>
+      <orm:class name="SdItRole" uniqueId="afa043bb-772b-4fe4-b407-0f98e26f3e59">
+        <orm:table name="SD_IT_ROLE" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="RoleId" />
+          </orm:key-generator>
+          <orm:single-field field-name="_roleid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_roleid" property="RoleId" behavior="readwrite" uniqueId="220514c3-eff2-4e9a-937f-6b32ac8bb527" type="System.Int32">
+          <orm:column name="ROLE_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_title" property="Title" behavior="readwrite" uniqueId="0e25b07a-67a2-462b-a029-bfb790039b44" type="System.String">
+          <orm:column name="TITLE" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_officeid" property="Officeid" behavior="readwrite" uniqueId="e0330c13-830f-47b0-b37c-cd2325e1aeb4" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="OFFICEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_description" property="Description" behavior="readwrite" uniqueId="f9ecf210-776c-44ad-84a7-bf9412d56f7e" type="System.String">
+          <orm:column name="DESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_sdoffice" property="Sdoffice" behavior="readwrite" uniqueId="13981f7f-1e84-4b60-b0c6-2614500f724b" type="ISE.ServiceDesk.Model.SdOffice">
+          <orm:reference uniqueId="bc05dc3a-e6df-48a9-b54d-d92d40bd802a" association-name="SdItRoleHasSdOffice">
+            <orm:sharedfield name="_officeid" target-class="ISE.ServiceDesk.Model.SdOffice" target-field="_officeid" />
+            <orm:constraint name="FKEY_OFFICEID_ROLE" delete-action="dbdefaultrule" destination-table="SD_OFFICE" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_sditroleexperts" property="SdItRoleExperts" behavior="readwrite" uniqueId="34742260-c284-42f2-9fde-b4bb341796b8" type="ISE.ServiceDesk.Model.SdItRoleExpert">
+          <orm:collection element-class="ISE.ServiceDesk.Model.SdItRoleExpert" inverse-field="_sditrole" order-by="" uniqueId="6c9e4f5a-7880-4732-b782-199713a64d72" />
+        </orm:field>
+        <orm:field name="_sdservicecategoryjobs" property="SdServiceCategoryJobs" behavior="readwrite" uniqueId="092eef7f-910b-494d-aaf5-d699068616a1" type="ISE.ServiceDesk.Model.SdServiceCategoryJob">
+          <orm:collection element-class="ISE.ServiceDesk.Model.SdServiceCategoryJob" inverse-field="_sditrole" order-by="" uniqueId="4e721150-f003-4efd-9c92-9ac65cec8a6c" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="SdItExpert" uniqueId="d4c99450-a4df-497e-86da-c36ffe4da747">
+        <orm:table name="SD_IT_EXPERT" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="ItExpertId" />
+          </orm:key-generator>
+          <orm:single-field field-name="_itexpertid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_itexpertid" property="ItExpertId" behavior="readwrite" uniqueId="11ba7775-4ea1-4f4b-bc83-cfdb8bb61e93" type="System.Int32">
+          <orm:column name="IT_EXPERT_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_userid" property="Userid" behavior="readwrite" uniqueId="424388af-4f43-4193-8d40-21a0e00548f1" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="USERID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_officeid" property="Officeid" behavior="readwrite" uniqueId="935fea2f-d364-479b-9984-521bcad98dae" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="OFFICEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_enabled" property="Enabled" behavior="readwrite" uniqueId="9fbee711-0eaa-42d9-a461-5e6a4ae83235" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ENABLED" sql-type="NUMBER" nullable="true" length="1" scale="0" has-default-value="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_sdoffice" property="Sdoffice" behavior="readwrite" uniqueId="d5f8c8a7-e270-45da-a4b9-9913002fa0f1" type="ISE.ServiceDesk.Model.SdOffice">
+          <orm:reference uniqueId="8c1094f0-3d12-459f-a234-a40780d07c6f" association-name="SdItExpertHasSdOffice">
+            <orm:sharedfield name="_officeid" target-class="ISE.ServiceDesk.Model.SdOffice" target-field="_officeid" />
+            <orm:constraint name="FKEY_OFFICEID_EXPERT" delete-action="dbdefaultrule" destination-table="SD_OFFICE" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_sditroleexperts" property="SdItRoleExperts" behavior="readwrite" uniqueId="ff9e2296-c1d5-409a-9b69-359005a82199" type="ISE.ServiceDesk.Model.SdItRoleExpert">
+          <orm:collection element-class="ISE.ServiceDesk.Model.SdItRoleExpert" inverse-field="_sditexpert" order-by="" uniqueId="5327eee9-400a-4aa8-8e93-735dbb374c92" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="SdFilterCategory" uniqueId="7d7bfcaa-1a94-4a5f-8c6d-51ade7493ce5">
+        <orm:table name="SD_FILTER_CATEGORY" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="FilterId" />
+          </orm:key-generator>
+          <orm:single-field field-name="_filterid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_filterid" property="FilterId" behavior="readwrite" uniqueId="b8a0f196-d571-499a-ac1c-95d44320cfce" type="System.Int32">
+          <orm:column name="FILTER_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_servicecaegoryid" property="Servicecaegoryid" behavior="readwrite" uniqueId="6cee6007-6a73-46ac-9231-8e1d1f9fcd1f" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="SERVICECAEGORYID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_menuparentid" property="Menuparentid" behavior="readwrite" uniqueId="e07fda39-450b-440f-8589-446fa3600bc8" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="MENUPARENTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_objecttypeid" property="Objecttypeid" behavior="readwrite" uniqueId="573d5686-2fdc-4152-9d54-fb6503646541" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="OBJECTTYPEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="VwPersonel" uniqueId="5d2abf8b-db83-403f-acba-69407e26a330">
+        <orm:table name="VW_PERSONEL" schema="ISEPERS" view="true" />
+        <orm:identity>
+          <orm:single-field field-name="_perid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_positionid" property="PositionId" behavior="readwrite" uniqueId="de7a09c7-d6c1-4b70-a477-b862e6e4ea13" type="System.Int32">
+          <orm:column name="POSITION_ID" sql-type="NUMBER" nullable="false" length="7" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_positiondesc" property="PositionDesc" behavior="readwrite" uniqueId="7370d427-0e6c-4047-aace-128bea31b57f" type="System.String">
+          <orm:column name="POSITION_DESC" sql-type="VARCHAR2" nullable="true" length="300" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_pertype" property="PerType" behavior="readwrite" uniqueId="e3010bc0-103e-4378-92fa-7cc84efa529f" type="System.Int16">
+          <orm:column name="PER_TYPE" sql-type="NUMBER" nullable="false" length="2" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_perno" property="PerNo" behavior="readwrite" uniqueId="c8788f57-0d0a-4fec-b8c3-0371bc5d5c06" type="System.Int32">
+          <orm:column name="PER_NO" sql-type="NUMBER" nullable="false" length="9" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_perlname" property="PerLname" behavior="readwrite" uniqueId="8439c15e-14ac-467f-bfa4-46fa6dd9bdfd" type="System.String">
+          <orm:column name="PER_LNAME" sql-type="VARCHAR2" nullable="false" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_perid" property="PerId" behavior="readwrite" uniqueId="6f7d19a5-dc2c-419c-989c-b728f2bd0f1d" type="System.Int32">
+          <orm:column name="PER_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_perfname" property="PerFname" behavior="readwrite" uniqueId="da81e74c-b7c0-4345-b837-f927ba17cb9f" type="System.String">
+          <orm:column name="PER_FNAME" sql-type="VARCHAR2" nullable="false" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_nationalno" property="NationalNo" behavior="readwrite" uniqueId="ec46b096-ca6c-40ae-8616-39ed30258e35" type="System.String">
+          <orm:column name="NATIONAL_NO" sql-type="CHAR" nullable="true" length="10" scale="0" ado-type="StringFixedLength" />
+        </orm:field>
+        <orm:field name="_name" property="Name" behavior="readwrite" uniqueId="5b4d3521-9ba5-4345-8a8c-8d64be3ea1b6" type="System.String">
+          <orm:column name="NAME" sql-type="VARCHAR2" nullable="false" length="300" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_isactivate" property="Isactivate" behavior="readwrite" uniqueId="2d63253b-5968-4fdf-9666-093bac1400ed" type="System.Int16">
+          <orm:column name="ISACTIVATE" sql-type="NUMBER" nullable="false" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_independentid" property="IndependentId" behavior="readwrite" uniqueId="f4f6c5d1-1e6d-4c37-bcfc-597f3143f639" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="INDEPENDENT_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_fullname" property="FullName" behavior="readwrite" uniqueId="104f88fd-13c5-4609-8f05-9cc936649e9d" type="System.String">
+          <orm:column name="FULL_NAME" sql-type="VARCHAR2" nullable="true" length="53" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_expiredate" property="ExpireDate" behavior="readwrite" uniqueId="91e6e357-d97a-46d4-b936-3455985df8a5" type="System.String">
+          <orm:column name="EXPIRE_DATE" sql-type="CHAR" nullable="true" length="8" scale="0" ado-type="StringFixedLength" />
+        </orm:field>
+        <orm:field name="_enddate" property="EndDate" behavior="readwrite" uniqueId="429746af-9c0a-45ad-877a-cbea24267058" type="System.String">
+          <orm:column name="END_DATE" sql-type="CHAR" nullable="true" length="8" scale="0" ado-type="StringFixedLength" />
+        </orm:field>
+        <orm:field name="_chartid" property="ChartId" behavior="readwrite" uniqueId="f3d28e7b-edeb-4a51-a8e7-e36652c8b688" type="System.Int32">
+          <orm:column name="CHART_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Objecttype" uniqueId="898d073e-eda7-4776-bf2a-61116a6afcdc">
+        <orm:table name="OBJECTTYPE" />
+        <orm:identity>
+          <orm:single-field field-name="_objecttypeid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_objecttypeid" property="ObjecttypeId" behavior="readwrite" uniqueId="a2410203-e58d-42f2-85a9-9eeea33276dd" type="System.Int32">
+          <orm:column name="OBJECTTYPE_ID" sql-type="NUMBER" nullable="false" length="5" scale="0" primary-key="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_objecttypedesc" property="ObjecttypeDesc" behavior="readwrite" uniqueId="37b44164-4a39-4cd3-a52a-366d0b800b96" type="System.String">
+          <orm:column name="OBJECTTYPE_DESC" sql-type="NVARCHAR2" nullable="false" length="100" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_deliverable" property="Deliverable" behavior="readwrite" uniqueId="7b54926c-89cd-47f1-a55e-99ffa60903f6" type="System.Int32">
+          <orm:column name="DELIVERABLE" sql-type="NUMBER" nullable="false" length="5" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_sizeable" property="Sizeable" behavior="readwrite" uniqueId="a7778fcc-95fc-4d87-a966-c6e32c233745" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="SIZEABLE" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_sizeabledesc" property="Sizeabledesc" behavior="readwrite" uniqueId="695b9709-1390-47a8-916d-58bebcc40fdd" type="System.String">
+          <orm:column name="SIZEABLEDESC" sql-type="NVARCHAR2" nullable="true" length="100" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_denumerable" property="Denumerable" behavior="readwrite" uniqueId="6b152ebe-6bcc-41c7-a0f5-fc02c7ff6ebf" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="DENUMERABLE" sql-type="NUMBER" nullable="true" length="1" scale="0" has-default-value="true" ado-type="Decimal" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="SdRequestWork" uniqueId="b421403a-2a3b-41b9-a7c4-2bdd17af0cba">
+        <orm:table name="SD_REQUEST_WORK" />
+        <orm:identity>
+          <orm:key-generator name="autoinc" />
+          <orm:single-field field-name="_requestworkid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_requestid" property="RequestId" behavior="readwrite" uniqueId="17afecb9-b877-4756-9caa-b34b8cee42fa" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="REQUEST_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_description" property="Description" behavior="readwrite" uniqueId="57d15dcc-60cb-4263-a1ca-a5112110efab" type="System.String">
+          <orm:column name="DESCRIPTION" sql-type="NVARCHAR2" nullable="true" length="200" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_userid" property="UserId" behavior="readwrite" uniqueId="c0fe0e2b-42c3-4cd4-9e61-c7f0302d5e52" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="USER_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_createdate" property="CreateDate" behavior="readwrite" uniqueId="001fe493-54e8-4f9b-8a5d-d5480bfcb60d" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="CREATE_DATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_requestworkid" property="RequestWorkId" behavior="readwrite" uniqueId="e017600b-3d57-4be5-863b-f6cc2dac6703" type="System.Int32">
+          <orm:column name="REQUEST_WORK_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_sdworkid" property="SdWorkId" behavior="readwrite" uniqueId="b4dc9bb8-9e54-4043-84d9-419d174dfe77" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="SD_WORK_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_worktime" property="WorkTime" behavior="readwrite" uniqueId="0f2894a0-af13-4dde-8a19-b34db82c9b76" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="WORK_TIME" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_workcost" property="WorkCost" behavior="readwrite" uniqueId="cc119fd5-e232-47e7-88fe-83876a99d4bd" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="WORK_COST" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_sduserrequest" property="Sduserrequest" behavior="readwrite" uniqueId="bd602b6c-7663-4765-a0d6-14877ec01df5" type="ISE.ServiceDesk.Model.SdUserRequest">
+          <orm:reference uniqueId="87d86c5d-f0b7-4177-978e-1252d8d06cb2" association-name="SdRequestWorkHasSdUserRequest">
+            <orm:sharedfield name="_requestid" target-class="ISE.ServiceDesk.Model.SdUserRequest" target-field="_serreqid" />
+            <orm:constraint name="REQUEST_WORK_FKEY" delete-action="dbdefaultrule" destination-table="SD_USER_REQUEST" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_sdwork" property="Sdwork" behavior="readwrite" uniqueId="5e1df102-949d-490d-81d8-a8d649888707" type="ISE.ServiceDesk.Model.SdWork">
+          <orm:reference uniqueId="79db81bf-3781-4628-8f37-b5de3d422bd2" association-name="SdRequestWorkHasSdWork">
+            <orm:sharedfield name="_sdworkid" target-class="ISE.ServiceDesk.Model.SdWork" target-field="_workid" />
+            <orm:constraint name="FKEY_REQUEST_WORK_WORKID" delete-action="dbdefaultrule" destination-table="SD_WORK" />
+          </orm:reference>
+        </orm:field>
+      </orm:class>
+      <orm:class name="SdWork" uniqueId="17ed86b3-3756-4c80-8d60-69701c77d235">
+        <orm:table name="SD_WORK" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="WorkId" />
+          </orm:key-generator>
+          <orm:single-field field-name="_workid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_workid" property="WorkId" behavior="readwrite" uniqueId="7b905870-8af3-4fb7-957a-92e6f7baa5d2" type="System.Int32">
+          <orm:column name="WORK_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_title" property="Title" behavior="readwrite" uniqueId="97cf1ed2-dbc3-47aa-a11a-45d0b59015c6" type="System.String">
+          <orm:column name="TITLE" sql-type="NVARCHAR2" nullable="true" length="200" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_estimatetime" property="EstimateTime" behavior="readwrite" uniqueId="7d206c17-6627-4df7-9433-48df60bd833f" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ESTIMATE_TIME" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_estimatecost" property="EstimateCost" behavior="readwrite" uniqueId="f12db6a6-bc3e-41d8-8dde-a3045907c739" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ESTIMATE_COST" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_sdservicecatid" property="SdServiceCatId" behavior="readwrite" uniqueId="6b7ee466-b6ce-46b9-9766-a6a60c2f69fc" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="SD_SERVICE_CAT_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_sdservicecategory" property="Sdservicecategory" behavior="readwrite" uniqueId="3025260f-e7c3-4cf7-bac9-157e96b70e24" type="ISE.ServiceDesk.Model.SdServiceCategory">
+          <orm:reference uniqueId="80c757e1-602d-4448-a01c-9e40e8eac8c4" association-name="SdWorkHasSdServiceCategory">
+            <orm:sharedfield name="_sdservicecatid" target-class="ISE.ServiceDesk.Model.SdServiceCategory" target-field="_servicecatid" />
+            <orm:constraint name="FKEY_WORK_SERVICECAT" delete-action="dbdefaultrule" destination-table="SD_SERVICE_CATEGORY" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_sdrequestworks" property="SdRequestWorks" behavior="readwrite" uniqueId="35e6845a-0977-40cf-90f9-db2a6669be9e" type="ISE.ServiceDesk.Model.SdRequestWork">
+          <orm:collection element-class="ISE.ServiceDesk.Model.SdRequestWork" inverse-field="_sdwork" order-by="" uniqueId="79db81bf-3781-4628-8f37-b5de3d422bd2" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Requestcartablecycle" uniqueId="d3cf2d7a-5041-4bec-9505-3f28ab42e2a4">
+        <orm:table name="REQUESTCARTABLECYCLES" view="true" />
+        <orm:identity>
+          <orm:single-field field-name="_cycleid" />
+        </orm:identity>
+        <orm:concurrency strategy="none" />
+        <orm:field name="_servicejob" property="Servicejob" behavior="readwrite" uniqueId="5ebb0b4d-4e88-47b1-badb-ee6f795a5308" type="System.String">
+          <orm:column name="SERVICEJOB" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_servicecategory" property="Servicecategory" behavior="readwrite" uniqueId="220d9602-9229-43e1-b726-55e534f11183" type="System.String">
+          <orm:column name="SERVICECATEGORY" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_serreqid" property="SerReqId" behavior="readwrite" uniqueId="e8758b87-7a26-441d-8c6e-5252c6e07531" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="SER_REQ_ID" sql-type="NUMBER" nullable="true" length="9" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_sendtime" property="Sendtime" behavior="readwrite" uniqueId="bf6d4758-a71e-416d-8326-1fadbf928d43" type="System.String">
+          <orm:column name="SENDTIME" sql-type="VARCHAR2" nullable="true" length="4" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_senderperid" property="SenderPerId" behavior="readwrite" uniqueId="ba539d64-123e-41fe-900e-61c3798449ad" type="System.Int32">
+          <orm:column name="SENDER_PER_ID" sql-type="NUMBER" nullable="false" length="9" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_sendernamefamily" property="SenderNameFamily" behavior="readwrite" uniqueId="df74c400-cc10-495f-b7cd-740b6929bbe4" type="System.String">
+          <orm:column name="SENDER_NAME_FAMILY" sql-type="VARCHAR2" nullable="true" length="51" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_senddate" property="SendDate" behavior="readwrite" uniqueId="7f7382c5-397f-4ca4-929c-86f663a4f417" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="SEND_DATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_receiverperid" property="ReceiverPerId" behavior="readwrite" uniqueId="6f0b7774-10f3-4bee-90e1-ef30eff7b60d" type="System.Int32">
+          <orm:column name="RECEIVER_PER_ID" sql-type="NUMBER" nullable="false" length="9" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_receivernamefamily" property="ReceiverNameFamily" behavior="readwrite" uniqueId="354ed5a5-a42f-4123-aa85-7800c7aefa92" type="System.String">
+          <orm:column name="RECEIVER_NAME_FAMILY" sql-type="VARCHAR2" nullable="true" length="51" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_positiontypeid" property="PositionTypeId" behavior="readwrite" uniqueId="d1859e3f-fe3c-4781-872a-d6bf1293bc16" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="POSITION_TYPE_ID" sql-type="NUMBER" nullable="true" length="3" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_personelname" property="Personelname" behavior="readwrite" uniqueId="2c884c8a-e4d1-4914-9311-740dc7fee1b4" type="System.String">
+          <orm:column name="PERSONELNAME" sql-type="VARCHAR2" nullable="true" length="51" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_ownername" property="Ownername" behavior="readwrite" uniqueId="18bbcba8-01ea-47b4-96fd-cc0c7c09f7b7" type="System.String">
+          <orm:column name="OWNERNAME" sql-type="VARCHAR2" nullable="true" length="51" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_ownerchartname" property="OwnerChartName" behavior="readwrite" uniqueId="7fc8cc44-22b0-4dd2-8e4e-da41c94d0e66" type="System.String">
+          <orm:column name="OWNER_CHART_NAME" sql-type="VARCHAR2" nullable="true" length="300" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_noarchivedate" property="NoArchiveDate" behavior="readwrite" uniqueId="f263c7d8-8ff5-4deb-9613-b75811d34919" type="System.String">
+          <orm:column name="NO_ARCHIVE_DATE" sql-type="VARCHAR2" nullable="true" length="8" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_intialingcomment" property="IntialingComment" behavior="readwrite" uniqueId="60f5e12c-0b4d-4993-9bd9-e5ebf6417f7d" type="System.String">
+          <orm:column name="INTIALING_COMMENT" sql-type="VARCHAR2" nullable="false" length="3000" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_cyclestatuschangedate" property="CyclestatusChangeDate" behavior="readwrite" uniqueId="3aa45879-daa3-476b-a3eb-966462ed6d12" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="CYCLESTATUS_CHANGE_DATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_cyclestatusid" property="CycleStatusId" behavior="readwrite" uniqueId="1907c53e-0b45-48fe-9e76-f8adc9a984c3" type="System.Nullable`1[[System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="CYCLE_STATUS_ID" sql-type="NUMBER" nullable="true" length="22" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_cyclestatusdesc" property="CycleStatusDesc" behavior="readwrite" uniqueId="94e85f6a-4dc6-4188-b683-1397896d9225" type="System.String">
+          <orm:column name="CYCLE_STATUS_DESC" sql-type="VARCHAR2" nullable="true" length="50" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_cyclerow" property="CycleRow" behavior="readwrite" uniqueId="e47add66-5328-4266-9f44-193e5d5979bf" type="System.Int16">
+          <orm:column name="CYCLE_ROW" sql-type="NUMBER" nullable="false" length="4" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_cycleid" property="CycleId" behavior="readwrite" uniqueId="6863350d-ea5c-4126-b6bb-4f812768c344" type="System.Int32">
+          <orm:column name="CYCLE_ID" sql-type="NUMBER" nullable="false" length="9" scale="0" primary-key="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_createdate" property="Createdate" behavior="readwrite" uniqueId="389bcc16-567e-4c68-bad0-04ac0f1a00ed" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="CREATEDATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_beterminated" property="BeTerminated" behavior="readwrite" uniqueId="c408d50b-28f1-46fd-b2b6-add7d97c5416" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="BE_TERMINATED" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_archivedate" property="ArchiveDate" behavior="readwrite" uniqueId="31b52018-5f73-46c2-aa50-ee3424d90d86" type="System.String">
+          <orm:column name="ARCHIVE_DATE" sql-type="VARCHAR2" nullable="true" length="8" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_archivecode" property="ArchiveCode" behavior="readwrite" uniqueId="f643493f-e06b-47bd-810a-88d1b2eb703a" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ARCHIVE_CODE" sql-type="NUMBER" nullable="true" length="5" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_actionparentid" property="ActionParentId" behavior="readwrite" uniqueId="69e30d0f-abad-42a3-ae34-bdc6d6ad06af" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ACTION_PARENT_ID" sql-type="NUMBER" nullable="true" length="9" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_actionname" property="ActionName" behavior="readwrite" uniqueId="ff7da205-a732-4c36-9d73-ff20208608b0" type="System.String">
+          <orm:column name="ACTION_NAME" sql-type="VARCHAR2" nullable="false" length="100" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_actionid" property="ActionId" behavior="readwrite" uniqueId="c45b7857-40aa-442d-945e-6ebc974b2716" type="System.Int32">
+          <orm:column name="ACTION_ID" sql-type="NUMBER" nullable="false" length="9" scale="0" ado-type="Decimal" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="VwHokm" uniqueId="6c4de546-582f-45fb-8928-db3b67bac53a">
+        <orm:table name="VW_HOKM" view="true" />
+        <orm:identity>
+          <orm:single-field field-name="_perid" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_telno" property="TelNo" behavior="readwrite" uniqueId="ba433096-5db4-46f8-b397-0966eeb2866b" type="System.String">
+          <orm:column name="TEL_NO" sql-type="VARCHAR2" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_statementno" property="StatementNo" behavior="readwrite" uniqueId="bba6180d-45ff-4a4c-aadc-d11c50456543" type="System.Nullable`1[[System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="STATEMENT_NO" sql-type="NUMBER" nullable="true" length="12" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_semattitle" property="SematTitle" behavior="readwrite" uniqueId="5ba21b83-cf55-4b29-be86-9f89d1e048e9" type="System.String">
+          <orm:column name="SEMAT_TITLE" sql-type="VARCHAR2" nullable="false" length="40" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_prsno" property="PrsNo" behavior="readwrite" uniqueId="bb630eae-b2ba-449a-a6fb-14142def5d0c" type="System.Int32">
+          <orm:column name="PRS_NO" sql-type="NUMBER" nullable="false" length="8" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_postalcode" property="PostalCode" behavior="readwrite" uniqueId="b0bf8556-7a94-4c2a-a7ba-7bed3d08347a" type="System.String">
+          <orm:column name="POSTAL_CODE" sql-type="VARCHAR2" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_posttitle" property="PostTitle" behavior="readwrite" uniqueId="eedd8a45-e054-4624-a395-6ae8cdfca3c8" type="System.String">
+          <orm:column name="POST_TITLE" sql-type="VARCHAR2" nullable="false" length="200" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_postsrl" property="PostSrl" behavior="readwrite" uniqueId="c13fa53d-7ffb-41d4-a107-3a6282484e7d" type="System.Int32">
+          <orm:column name="POST_SRL" sql-type="NUMBER" nullable="false" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_positionlevel" property="Positionlevel" behavior="readwrite" uniqueId="b6f2c8f5-dfac-4957-ab09-548b4536c8d5" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="POSITIONLEVEL" sql-type="NUMBER" nullable="true" length="3" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_perid" property="PerId" behavior="readwrite" uniqueId="f80a7222-9fda-44bd-8237-5c9ed7ae8d65" type="System.Nullable`1[[System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="PER_ID" sql-type="NUMBER" nullable="true" length="22" scale="0" primary-key="true" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_namefamily" property="NameFamily" behavior="readwrite" uniqueId="327d049a-b644-4504-9804-21c1dcfbe8f9" type="System.String">
+          <orm:column name="NAME_FAMILY" sql-type="VARCHAR2" nullable="true" length="61" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_name" property="Name" behavior="readwrite" uniqueId="dc20aaed-760b-4b87-92de-8fffc08b4fe7" type="System.String">
+          <orm:column name="NAME" sql-type="VARCHAR2" nullable="false" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_mobileno" property="MobileNo" behavior="readwrite" uniqueId="7b4432c0-e682-4015-ac29-61f654f0d361" type="System.String">
+          <orm:column name="MOBILE_NO" sql-type="VARCHAR2" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_melicode" property="MeliCode" behavior="readwrite" uniqueId="c3267b18-b63f-442e-a903-be1357ddd427" type="System.String">
+          <orm:column name="MELI_CODE" sql-type="VARCHAR2" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_jobtitle" property="JobTitle" behavior="readwrite" uniqueId="e54109cb-050a-454a-a640-35318aa80dfe" type="System.String">
+          <orm:column name="JOB_TITLE" sql-type="VARCHAR2" nullable="false" length="50" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_jobsrl" property="JobSrl" behavior="readwrite" uniqueId="2a4a4252-4a7b-481a-b3fe-b93da167f1f8" type="System.Int32">
+          <orm:column name="JOB_SRL" sql-type="NUMBER" nullable="false" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_jobcode" property="JobCode" behavior="readwrite" uniqueId="3731f537-11b9-4393-a798-357d85bd5950" type="System.String">
+          <orm:column name="JOB_CODE" sql-type="VARCHAR2" nullable="true" length="6" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_issudate" property="IssuDate" behavior="readwrite" uniqueId="3a84f8a6-5bd1-4bc6-a310-51c2bbb267c2" type="System.String">
+          <orm:column name="ISSU_DATE" sql-type="VARCHAR2" nullable="true" length="46" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_idno" property="IdNo" behavior="readwrite" uniqueId="4b931a32-a5a1-4af7-9f20-b0b376d1d4a4" type="System.String">
+          <orm:column name="ID_NO" sql-type="VARCHAR2" nullable="true" length="12" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_head" property="Head" behavior="readwrite" uniqueId="abe59203-5505-49b5-aa8a-1cba663743c3" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="HEAD" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_fileno" property="FileNo" behavior="readwrite" uniqueId="10ca7e6e-045a-421c-962b-af2d8dcebff0" type="System.String">
+          <orm:column name="FILE_NO" sql-type="VARCHAR2" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_family" property="Family" behavior="readwrite" uniqueId="407a61e6-a4e5-4594-88de-a3b91a3f598e" type="System.String">
+          <orm:column name="FAMILY" sql-type="VARCHAR2" nullable="false" length="40" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_emsalrpsrl" property="EmsalrpSrl" behavior="readwrite" uniqueId="a89813b7-317e-4859-ad21-1d0bbdf55d8c" type="System.Int64">
+          <orm:column name="EMSALRP_SRL" sql-type="NUMBER" nullable="false" length="12" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_empldate" property="EmplDate" behavior="readwrite" uniqueId="122dbb4a-ec27-43cd-9a33-3bdf87d504ea" type="System.String">
+          <orm:column name="EMPL_DATE" sql-type="VARCHAR2" nullable="true" length="46" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_empblcpsrl" property="EmpblcpSrl" behavior="readwrite" uniqueId="f17ba24b-2983-4488-ae43-6b812ca95ff0" type="System.Int32">
+          <orm:column name="EMPBLCP_SRL" sql-type="NUMBER" nullable="false" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_ememptpsrl" property="EmemptpSrl" behavior="readwrite" uniqueId="604206f0-e9c9-4592-b04e-bb1bf8f19071" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="EMEMPTP_SRL" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_ememptpdes" property="EmemptpDes" behavior="readwrite" uniqueId="ff581706-2c0e-4c21-9ef9-1b0ed536c3da" type="System.String">
+          <orm:column name="EMEMPTP_DES" sql-type="VARCHAR2" nullable="false" length="40" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_emcostotitle" property="EmcostoTitle" behavior="readwrite" uniqueId="b74ea93f-cc1d-4d15-b951-d383ff1ea86f" type="System.String">
+          <orm:column name="EMCOSTO_TITLE" sql-type="VARCHAR2" nullable="false" length="200" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_emcostosrlcostassign" property="EmcostoSrlCostAssign" behavior="readwrite" uniqueId="0686fceb-2590-4b15-beb4-ed0def2b71dd" type="System.Int32">
+          <orm:column name="EMCOSTO_SRL_COST_ASSIGN" sql-type="NUMBER" nullable="false" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_emcostosrl" property="EmcostoSrl" behavior="readwrite" uniqueId="ac741574-4d11-4f7f-aafb-fb92b932c1a4" type="System.Int32">
+          <orm:column name="EMCOSTO_SRL" sql-type="NUMBER" nullable="false" length="6" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_emcostoindependtitle" property="EmcostoIndependTitle" behavior="readwrite" uniqueId="05efb25d-a0c1-4681-b594-780427900fe1" type="System.String">
+          <orm:column name="EMCOSTO_INDEPEND_TITLE" sql-type="VARCHAR2" nullable="false" length="200" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_emcostoindependsrl" property="EmcostoIndependSrl" behavior="readwrite" uniqueId="862c7d1f-1000-4b56-a15c-eefe7f831b3a" type="System.Int64">
+          <orm:column name="EMCOSTO_INDEPEND_SRL" sql-type="NUMBER" nullable="false" length="10" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_birthdate" property="BirthDate" behavior="readwrite" uniqueId="9471edac-b9db-4af6-9513-2c6caa23f4ea" type="System.String">
+          <orm:column name="BIRTH_DATE" sql-type="VARCHAR2" nullable="true" length="46" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_address" property="Address" behavior="readwrite" uniqueId="10c675d8-bf9a-4651-ad46-3c5e40e82509" type="System.String">
+          <orm:column name="ADDRESS" sql-type="VARCHAR2" nullable="true" length="200" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+      </orm:class>
+    </orm:namespace>
+    <orm:schema schema="">
+      <orm:table name="SD_USER_REQUEST">
+        <orm:column name="SER_REQ_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        <orm:column name="CREATEDATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="CURRENTSTATEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="CREDITDATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="CREATEUSERID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="OWNERUSERID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="SERVICECATEGORYJOBID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="DESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="STARTDATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="CALLNUMBER" sql-type="VARCHAR2" nullable="true" length="15" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="MENUITEMID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="ENDDATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="MINESTIMATETIME" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="MAXESTIMATETIME" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="TRANSFERID" sql-type="NUMBER" nullable="true" length="9" scale="0" ado-type="Decimal" />
+        <orm:column name="GROUPINGNUMBER" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="FINALSERVICECATEGORYJOBID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="FINALDESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="OWNER_CHART_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="EXPIRE_DATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="PRIORITY" sql-type="NUMBER" nullable="true" length="3" scale="0" ado-type="Decimal" />
+        <orm:constraint name="FKEY_REQUEST_STATE" delete-action="dbdefaultrule" destination-table="SD_REQUEST_STATE">
+          <orm:column name="CURRENTSTATEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="SD_SERVICE_JOB">
+        <orm:column name="SERVICE_JOB_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        <orm:column name="TITLE" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="DESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="ENABLED" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+      </orm:table>
+      <orm:table name="SD_SERVICE_CATEGORY_JOB">
+        <orm:column name="SERVICE_CAT_JOB_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        <orm:column name="SERVICECATEGORYID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="SERVICEJOBID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="ACTIONID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="HASATTACHMENT" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="HASDESCRIPTION" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="ROLEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="HASCREDITDATE" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="ESTIMATETIMECOST" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="ISINTREE" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="PRECEDENCE" sql-type="NUMBER" nullable="true" length="3" scale="0" ado-type="Decimal" />
+        <orm:column name="MULTIREQUEST" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="IS_INSERTER" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="ENABLED" sql-type="NUMBER" nullable="true" length="1" scale="0" has-default-value="true" ado-type="Decimal" />
+        <orm:constraint name="FKEY_SERVICECATJOB_SERVJOB" delete-action="dbdefaultrule" destination-table="SD_SERVICE_JOB">
+          <orm:column name="SERVICEJOBID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:constraint>
+        <orm:constraint name="FKEY_SERVICE_CAT_JOB_ROLE" delete-action="dbdefaultrule" destination-table="SD_IT_ROLE">
+          <orm:column name="ROLEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:constraint>
+        <orm:constraint name="FKEY_SERVICCATJO_SERVICECAT" delete-action="dbdefaultrule" destination-table="SD_SERVICE_CATEGORY">
+          <orm:column name="SERVICECATEGORYID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="SD_SERVICE_CATEGORY">
+        <orm:column name="SERVICE_CAT_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        <orm:column name="TITLE" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="DESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="ENABLED" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="PARENTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="HASJOB" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="HASFILTER" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="HASMENU" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="HASDEVICE" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+      </orm:table>
+      <orm:table name="SD_REQUEST_STATE">
+        <orm:column name="SD_REQ_STATE_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" ado-type="Decimal" />
+        <orm:column name="STATE_TITLE" sql-type="VARCHAR2" nullable="true" length="50" scale="0" ado-type="StringVariableLength" />
+      </orm:table>
+      <orm:table name="SD_REQUEST_PROCESS">
+        <orm:column name="REQ_PROCESS_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" ado-type="Decimal" />
+        <orm:column name="SERVICECATEGORYJOBID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="DESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="PROCESSDATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="ITEXPERTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="TIMECOST" sql-type="NUMBER" nullable="true" length="22" scale="0" ado-type="Decimal" />
+        <orm:column name="REQUESTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="FINANCIALCOST" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+      </orm:table>
+      <orm:table name="SD_REQUEST_ATTACHMENT">
+        <orm:column name="REUEST_ATTACH_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        <orm:column name="REQUESTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="FILETYPE" sql-type="VARCHAR2" nullable="true" length="5" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="FILENAME" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="DESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="CONTENT" sql-type="BLOB" nullable="true" length="0" scale="0" ado-type="Blob" />
+        <orm:constraint name="REQUEST_ATTACH_FKEY" delete-action="dbdefaultrule" destination-table="SD_USER_REQUEST">
+          <orm:column name="REQUESTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="SD_REQUEST_ASSIGNED_EXPERT">
+        <orm:column name="REQIEST_EXPERT_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        <orm:column name="REQUESTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="ASSIGNDATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="ASSIGNTYPE" sql-type="NUMBER" nullable="true" length="2" scale="0" ado-type="Decimal" />
+        <orm:column name="ISHEAD" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="EXPERT_PER_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+      </orm:table>
+      <orm:table name="SD_OFFICE">
+        <orm:column name="OFFICE_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" ado-type="Decimal" />
+        <orm:column name="TITLE" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+      </orm:table>
+      <orm:table name="SD_IT_ROLE_EXPERT">
+        <orm:column name="ROLE_EXPERT_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        <orm:column name="EXPERTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="ITROLEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="WEIGHT" sql-type="NUMBER" nullable="true" length="3" scale="0" ado-type="Decimal" />
+        <orm:constraint name="FKEY_ITROLEID_EXPERT" delete-action="dbdefaultrule" destination-table="SD_IT_ROLE">
+          <orm:column name="ITROLEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:constraint>
+        <orm:constraint name="FKEY_EXPERTID_EXPERTROLE" delete-action="dbdefaultrule" destination-table="SD_IT_EXPERT">
+          <orm:column name="EXPERTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="SD_IT_ROLE">
+        <orm:column name="ROLE_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        <orm:column name="TITLE" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="OFFICEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="DESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:constraint name="FKEY_OFFICEID_ROLE" delete-action="dbdefaultrule" destination-table="SD_OFFICE">
+          <orm:column name="OFFICEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="SD_IT_EXPERT">
+        <orm:column name="IT_EXPERT_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        <orm:column name="USERID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="OFFICEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="ENABLED" sql-type="NUMBER" nullable="true" length="1" scale="0" has-default-value="true" ado-type="Decimal" />
+        <orm:constraint name="FKEY_OFFICEID_EXPERT" delete-action="dbdefaultrule" destination-table="SD_OFFICE">
+          <orm:column name="OFFICEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="SD_FILTER_CATEGORY">
+        <orm:column name="FILTER_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        <orm:column name="SERVICECAEGORYID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="MENUPARENTID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="OBJECTTYPEID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+      </orm:table>
+      <orm:table name="SD_ATTACHMENT">
+        <orm:column name="ATTACHMENT_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        <orm:column name="FILENAME" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="DESCRIPTION" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="FILETYPE" sql-type="VARCHAR2" nullable="true" length="5" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="CONTENT" sql-type="BLOB" nullable="true" length="0" scale="0" ado-type="Blob" />
+      </orm:table>
+      <orm:table name="OBJECTTYPE">
+        <orm:column name="OBJECTTYPE_ID" sql-type="NUMBER" nullable="false" length="5" scale="0" primary-key="true" ado-type="Decimal" />
+        <orm:column name="OBJECTTYPE_DESC" sql-type="NVARCHAR2" nullable="false" length="100" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="DELIVERABLE" sql-type="NUMBER" nullable="false" length="5" scale="0" ado-type="Decimal" />
+        <orm:column name="SIZEABLE" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="SIZEABLEDESC" sql-type="NVARCHAR2" nullable="true" length="100" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="DENUMERABLE" sql-type="NUMBER" nullable="true" length="1" scale="0" has-default-value="true" ado-type="Decimal" />
+      </orm:table>
+      <orm:table name="SD_REQUEST_WORK">
+        <orm:column name="REQUEST_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="DESCRIPTION" sql-type="NVARCHAR2" nullable="true" length="200" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="USER_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="CREATE_DATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="REQUEST_WORK_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        <orm:column name="SD_WORK_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="WORK_TIME" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="WORK_COST" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:constraint name="REQUEST_WORK_FKEY" delete-action="dbdefaultrule" destination-table="SD_USER_REQUEST">
+          <orm:column name="REQUEST_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:constraint>
+        <orm:constraint name="FKEY_REQUEST_WORK_WORKID" delete-action="dbdefaultrule" destination-table="SD_WORK">
+          <orm:column name="SD_WORK_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="SD_WORK">
+        <orm:column name="WORK_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" backend-calculated="true" ado-type="Decimal" />
+        <orm:column name="TITLE" sql-type="NVARCHAR2" nullable="true" length="200" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="ESTIMATE_TIME" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="ESTIMATE_COST" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="SD_SERVICE_CAT_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:constraint name="FKEY_WORK_SERVICECAT" delete-action="dbdefaultrule" destination-table="SD_SERVICE_CATEGORY">
+          <orm:column name="SD_SERVICE_CAT_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="REQUESTCARTABLECYCLES" view="true">
+        <orm:column name="SERVICEJOB" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="SERVICECATEGORY" sql-type="VARCHAR2" nullable="true" length="250" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="SER_REQ_ID" sql-type="NUMBER" nullable="true" length="9" scale="0" ado-type="Decimal" />
+        <orm:column name="SENDTIME" sql-type="VARCHAR2" nullable="true" length="4" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="SENDER_PER_ID" sql-type="NUMBER" nullable="false" length="9" scale="0" ado-type="Decimal" />
+        <orm:column name="SENDER_NAME_FAMILY" sql-type="VARCHAR2" nullable="true" length="51" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="SEND_DATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="RECEIVER_PER_ID" sql-type="NUMBER" nullable="false" length="9" scale="0" ado-type="Decimal" />
+        <orm:column name="RECEIVER_NAME_FAMILY" sql-type="VARCHAR2" nullable="true" length="51" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="POSITION_TYPE_ID" sql-type="NUMBER" nullable="true" length="3" scale="0" ado-type="Decimal" />
+        <orm:column name="PERSONELNAME" sql-type="VARCHAR2" nullable="true" length="51" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="OWNERNAME" sql-type="VARCHAR2" nullable="true" length="51" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="OWNER_CHART_NAME" sql-type="VARCHAR2" nullable="true" length="300" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="NO_ARCHIVE_DATE" sql-type="VARCHAR2" nullable="true" length="8" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="INTIALING_COMMENT" sql-type="VARCHAR2" nullable="false" length="3000" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="CYCLESTATUS_CHANGE_DATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="CYCLE_STATUS_ID" sql-type="NUMBER" nullable="true" length="22" scale="0" ado-type="Decimal" />
+        <orm:column name="CYCLE_STATUS_DESC" sql-type="VARCHAR2" nullable="true" length="50" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="CYCLE_ROW" sql-type="NUMBER" nullable="false" length="4" scale="0" ado-type="Decimal" />
+        <orm:column name="CYCLE_ID" sql-type="NUMBER" nullable="false" length="9" scale="0" primary-key="true" ado-type="Decimal" />
+        <orm:column name="CREATEDATE" sql-type="DATE" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="BE_TERMINATED" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="ARCHIVE_DATE" sql-type="VARCHAR2" nullable="true" length="8" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="ARCHIVE_CODE" sql-type="NUMBER" nullable="true" length="5" scale="0" ado-type="Decimal" />
+        <orm:column name="ACTION_PARENT_ID" sql-type="NUMBER" nullable="true" length="9" scale="0" ado-type="Decimal" />
+        <orm:column name="ACTION_NAME" sql-type="VARCHAR2" nullable="false" length="100" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="ACTION_ID" sql-type="NUMBER" nullable="false" length="9" scale="0" ado-type="Decimal" />
+      </orm:table>
+      <orm:table name="VW_HOKM" view="true">
+        <orm:column name="TEL_NO" sql-type="VARCHAR2" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="STATEMENT_NO" sql-type="NUMBER" nullable="true" length="12" scale="0" ado-type="Decimal" />
+        <orm:column name="SEMAT_TITLE" sql-type="VARCHAR2" nullable="false" length="40" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="PRS_NO" sql-type="NUMBER" nullable="false" length="8" scale="0" ado-type="Decimal" />
+        <orm:column name="POSTAL_CODE" sql-type="VARCHAR2" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="POST_TITLE" sql-type="VARCHAR2" nullable="false" length="200" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="POST_SRL" sql-type="NUMBER" nullable="false" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="POSITIONLEVEL" sql-type="NUMBER" nullable="true" length="3" scale="0" ado-type="Decimal" />
+        <orm:column name="PER_ID" sql-type="NUMBER" nullable="true" length="22" scale="0" primary-key="true" ado-type="Decimal" />
+        <orm:column name="NAME_FAMILY" sql-type="VARCHAR2" nullable="true" length="61" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="NAME" sql-type="VARCHAR2" nullable="false" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="MOBILE_NO" sql-type="VARCHAR2" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="MELI_CODE" sql-type="VARCHAR2" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="JOB_TITLE" sql-type="VARCHAR2" nullable="false" length="50" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="JOB_SRL" sql-type="NUMBER" nullable="false" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="JOB_CODE" sql-type="VARCHAR2" nullable="true" length="6" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="ISSU_DATE" sql-type="VARCHAR2" nullable="true" length="46" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="ID_NO" sql-type="VARCHAR2" nullable="true" length="12" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="HEAD" sql-type="NUMBER" nullable="true" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="FILE_NO" sql-type="VARCHAR2" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="FAMILY" sql-type="VARCHAR2" nullable="false" length="40" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="EMSALRP_SRL" sql-type="NUMBER" nullable="false" length="12" scale="0" ado-type="Decimal" />
+        <orm:column name="EMPL_DATE" sql-type="VARCHAR2" nullable="true" length="46" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="EMPBLCP_SRL" sql-type="NUMBER" nullable="false" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="EMEMPTP_SRL" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="EMEMPTP_DES" sql-type="VARCHAR2" nullable="false" length="40" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="EMCOSTO_TITLE" sql-type="VARCHAR2" nullable="false" length="200" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="EMCOSTO_SRL_COST_ASSIGN" sql-type="NUMBER" nullable="false" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="EMCOSTO_SRL" sql-type="NUMBER" nullable="false" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="EMCOSTO_INDEPEND_TITLE" sql-type="VARCHAR2" nullable="false" length="200" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="EMCOSTO_INDEPEND_SRL" sql-type="NUMBER" nullable="false" length="10" scale="0" ado-type="Decimal" />
+        <orm:column name="BIRTH_DATE" sql-type="VARCHAR2" nullable="true" length="46" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="ADDRESS" sql-type="VARCHAR2" nullable="true" length="200" scale="0" ado-type="StringVariableLength" />
+      </orm:table>
+      <orm:procedure name="GETDATAFORINSFAILREQ" package-name="PKG_FAILREQUEST">
+        <orm:procedure-parameter name="V_PER_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" mode="in" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" />
+        <orm:procedure-parameter name="RESULTSET" sql-type="REF CURSOR" nullable="true" length="0" scale="0" ado-type="Cursor" mode="out" type="System.Object" />
+        <orm:result-sets />
+      </orm:procedure>
+    </orm:schema>
+    <orm:schema schema="ISEPERS">
+      <orm:table name="VW_PERSONEL" schema="ISEPERS" view="true">
+        <orm:column name="POSITION_ID" sql-type="NUMBER" nullable="false" length="7" scale="0" ado-type="Decimal" />
+        <orm:column name="POSITION_DESC" sql-type="VARCHAR2" nullable="true" length="300" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="PER_TYPE" sql-type="NUMBER" nullable="false" length="2" scale="0" ado-type="Decimal" />
+        <orm:column name="PER_NO" sql-type="NUMBER" nullable="false" length="9" scale="0" ado-type="Decimal" />
+        <orm:column name="PER_LNAME" sql-type="VARCHAR2" nullable="false" length="30" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="PER_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" primary-key="true" ado-type="Decimal" />
+        <orm:column name="PER_FNAME" sql-type="VARCHAR2" nullable="false" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="NATIONAL_NO" sql-type="CHAR" nullable="true" length="10" scale="0" ado-type="StringFixedLength" />
+        <orm:column name="NAME" sql-type="VARCHAR2" nullable="false" length="300" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="ISACTIVATE" sql-type="NUMBER" nullable="false" length="1" scale="0" ado-type="Decimal" />
+        <orm:column name="INDEPENDENT_ID" sql-type="NUMBER" nullable="true" length="6" scale="0" ado-type="Decimal" />
+        <orm:column name="FULL_NAME" sql-type="VARCHAR2" nullable="true" length="53" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="EXPIRE_DATE" sql-type="CHAR" nullable="true" length="8" scale="0" ado-type="StringFixedLength" />
+        <orm:column name="END_DATE" sql-type="CHAR" nullable="true" length="8" scale="0" ado-type="StringFixedLength" />
+        <orm:column name="CHART_ID" sql-type="NUMBER" nullable="false" length="6" scale="0" ado-type="Decimal" />
+      </orm:table>
+    </orm:schema>
+    <orm:relational-naming-settings>
+      <orm:source-strategy>Property</orm:source-strategy>
+      <orm:remove-camel-case>False</orm:remove-camel-case>
+    </orm:relational-naming-settings>
+  </orm:orm>
+  <ModelSettings xmlns="">
+    <AppConfigConnectionPropertyName>Connection</AppConfigConnectionPropertyName>
+    <AppConfigConnectionString>data source=ISE;password=ise9023;user id=ISECOMPUTER</AppConfigConnectionString>
+    <NamingSettings>
+      <ClassRules>
+        <CaseMode>PascalCase</CaseMode>
+        <PluralizationMode>Singularize</PluralizationMode>
+        <RemoveUnderscore>true</RemoveUnderscore>
+        <UnderscoreAsWordDelimiter>true</UnderscoreAsWordDelimiter>
+        <CapitalLetterAsWordDelimiter>false</CapitalLetterAsWordDelimiter>
+      </ClassRules>
+      <FieldRules>
+        <AddPrefix>_</AddPrefix>
+        <CaseMode>CamelCase</CaseMode>
+        <RemoveUnderscore>true</RemoveUnderscore>
+        <UnderscoreAsWordDelimiter>true</UnderscoreAsWordDelimiter>
+        <CapitalLetterAsWordDelimiter>false</CapitalLetterAsWordDelimiter>
+      </FieldRules>
+      <PropertyRules>
+        <CaseMode>PascalCase</CaseMode>
+        <RemoveUnderscore>true</RemoveUnderscore>
+        <UnderscoreAsWordDelimiter>true</UnderscoreAsWordDelimiter>
+        <CapitalLetterAsWordDelimiter>false</CapitalLetterAsWordDelimiter>
+      </PropertyRules>
+      <NavigationPropertyRules>
+        <IsPrefixSuffixEnabled>false</IsPrefixSuffixEnabled>
+      </NavigationPropertyRules>
+    </NamingSettings>
+    <CodeGenerationSettings>
+      <MappingDefinitionType>Xml</MappingDefinitionType>
+      <GenerateMultipleFiles>false</GenerateMultipleFiles>
+    </CodeGenerationSettings>
+    <SchemaUpdateSettings>
+      <DeploymentProject>ISE.ServiceDesk.Model</DeploymentProject>
+    </SchemaUpdateSettings>
+    <BackendConfigurationSettings>
+      <BackendConfiguration>
+        <Backend>Oracle</Backend>
+        <ProviderName>Oracle.DataAccess.Client</ProviderName>
+      </BackendConfiguration>
+    </BackendConfigurationSettings>
+  </ModelSettings>
+  <Types>
+    <DomainClass Id="e406132d-4e89-4820-89a3-2dff52840eb4" name="SdUserRequest" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="SerReqId">
+      <Property Id="43d14d2c-5f0a-4a0c-8f48-6408e5e83ef9" name="SerReqId" type="Int32" label="SerReqId : Int32" kind="Persistent" identity="true" fieldName="_serreqid" />
+      <Property Id="ba103faa-8f73-411f-8f3f-4ea23fe95b81" name="Callnumber" label="Callnumber : String" kind="Persistent" fieldName="_callnumber" />
+      <Property Id="84d81267-530c-4fde-8048-9c6470f2a4a2" name="Createdate" type="DateTime" label="Createdate : DateTime" nullable="true" kind="Persistent" fieldName="_createdate" />
+      <Property Id="f4d35c6f-40d1-45d0-9676-bdbeaef8a8c3" name="Createuserid" type="Int32" label="Createuserid : Int32" nullable="true" kind="Persistent" fieldName="_createuserid" />
+      <Property Id="a74eb4a2-f853-4ad3-9717-2eaa7b363ccd" name="Creditdate" type="DateTime" label="Creditdate : DateTime" nullable="true" kind="Persistent" fieldName="_creditdate" />
+      <Property Id="7b23f6a2-3c3f-4333-aab1-2ac894e2557a" name="Currentstateid" type="Int32" label="Currentstateid : Int32" nullable="true" kind="Persistent" fieldName="_currentstateid" />
+      <Property Id="9e366150-2987-4321-b966-7006f6ba2f4e" name="Description" label="Description : String" kind="Persistent" fieldName="_description" />
+      <Property Id="f36076dd-8a14-4aca-8ec8-f60bfb1f7651" name="Enddate" type="DateTime" label="Enddate : DateTime" nullable="true" kind="Persistent" fieldName="_enddate" />
+      <Property Id="d3b23427-a3e4-4930-b8cb-c40db395e04b" name="Finaldescription" label="Finaldescription : String" kind="Persistent" fieldName="_finaldescription" />
+      <Property Id="c5985d22-c7bf-4a57-8d36-2bc9ce50065e" name="Finalservicecategoryjobid" type="Int32" label="Finalservicecategoryjobid : Int32" nullable="true" kind="Persistent" fieldName="_finalservicecategoryjobid" />
+      <Property Id="954104b3-d239-48a6-be44-2c412f83f4d7" name="Groupingnumber" type="Int32" label="Groupingnumber : Int32" nullable="true" kind="Persistent" fieldName="_groupingnumber" />
+      <Property Id="605d8591-6ba8-420f-a746-812368ee0e67" name="Maxestimatetime" type="Int32" label="Maxestimatetime : Int32" nullable="true" kind="Persistent" fieldName="_maxestimatetime" />
+      <Property Id="ed2e1ba0-ae1c-4353-95c0-41374896dfea" name="Menuitemid" type="Int32" label="Menuitemid : Int32" nullable="true" kind="Persistent" fieldName="_menuitemid" />
+      <Property Id="a0476d80-a9d8-4290-b664-6af2336ff8e8" name="Minestimatetime" type="Int32" label="Minestimatetime : Int32" nullable="true" kind="Persistent" fieldName="_minestimatetime" />
+      <Property Id="4e0fea02-cd86-4a73-8797-dd95eddf6412" name="Owneruserid" type="Int32" label="Owneruserid : Int32" nullable="true" kind="Persistent" fieldName="_owneruserid" />
+      <Property Id="0db102f8-dcfc-462b-a75d-c6359dd2104d" name="Servicecategoryjobid" type="Int32" label="Servicecategoryjobid : Int32" nullable="true" kind="Persistent" fieldName="_servicecategoryjobid" />
+      <Property Id="47dcff1f-41d6-4006-8dae-62b675b8417d" name="Startdate" type="DateTime" label="Startdate : DateTime" nullable="true" kind="Persistent" fieldName="_startdate" />
+      <Property Id="cbdb1a28-118e-44bc-9e72-bd0a94e6540b" name="Transferid" type="Int32" label="Transferid : Int32" nullable="true" kind="Persistent" fieldName="_transferid" />
+      <Property Id="165afdc8-c5dc-4244-9496-2129c10c5230" name="OwnerChartId" type="Int32" label="OwnerChartId : Int32" nullable="true" kind="Persistent" fieldName="_ownerchartid" />
+      <Property Id="dd7f991e-09be-4c89-918f-c5b7708eb31e" name="ExpireDate" type="DateTime" label="ExpireDate : DateTime" nullable="true" kind="Persistent" fieldName="_expiredate" />
+      <Property Id="a2d96cfb-fb26-49df-a28c-fa69f950e69b" name="Priority" type="Int16" label="Priority : Int16" nullable="true" kind="Persistent" fieldName="_priority" />
+      <AssociationTargets>
+        <Association Id="0609af47-a848-4449-8661-aeaf8367fe6b" SourceMultiplicity="ZeroOne" name="SdUserRequestHasSdRequestState">
+          <DomainClassMoniker name="/EntitiesModel1/SdRequestState" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="f60203dd-c93a-429f-aa69-8d4397341b7c">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdRequestState/SdUserRequests" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="6f587419-ddc2-4376-aaf4-43d7750251af">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdUserRequest/Sdrequeststate" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="01cc7122-3103-4808-9d4a-c1d0696133eb">
+          <NavigationalProperty Id="c165bced-93cc-46ac-826e-4c5060939dcc" name="SdRequestAttachments" type="IList&lt;SdRequestAttachment&gt;" label="SdRequestAttachments : IList&lt;SdRequestAttachment&gt;" nullable="true" kind="Persistent" fieldName="_sdrequestattachments" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="548b1dd4-a71a-4659-a2a6-f102dedf32dd">
+          <NavigationalProperty Id="1654c02f-5903-4b23-9b19-154f1bbb8fc0" name="SdRequestWorks" type="IList&lt;SdRequestWork&gt;" label="SdRequestWorks : IList&lt;SdRequestWork&gt;" nullable="true" kind="Persistent" fieldName="_sdrequestworks" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="5d76de3b-a393-4be0-a61d-c2f100283f87">
+          <NavigationalProperty Id="c06499b3-0db8-4529-b73d-ffc391906e08" name="Sdrequeststate" type="SdRequestState" label="Sdrequeststate : SdRequestState" nullable="true" kind="Persistent" fieldName="_sdrequeststate" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="efc1fe14-9c50-43fd-bafc-d167f9829963" name="SdServiceJob" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="ServiceJobId">
+      <Property Id="513d09c1-d3c4-491d-b3b4-8cf4ddafb4f9" name="ServiceJobId" type="Int32" label="ServiceJobId : Int32" kind="Persistent" identity="true" fieldName="_servicejobid" />
+      <Property Id="9d86d697-4648-4ec3-b263-71a0f09c25e5" name="Description" label="Description : String" kind="Persistent" fieldName="_description" />
+      <Property Id="af0b36a7-1526-4ad0-9cd1-9b5504a7d228" name="Enabled" type="Int16" label="Enabled : Int16" nullable="true" kind="Persistent" fieldName="_enabled" />
+      <Property Id="f992c542-4df2-48cb-a2da-6e33ef8f14b8" name="Title" label="Title : String" kind="Persistent" fieldName="_title" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="f6fa5f11-8819-4cec-90e5-4ee38c9016c2">
+          <NavigationalProperty Id="c17186d7-58e7-448a-8323-fcafe8ed069b" name="SdServiceCategoryJobs" type="IList&lt;SdServiceCategoryJob&gt;" label="SdServiceCategoryJobs : IList&lt;SdServiceCategoryJob&gt;" nullable="true" kind="Persistent" fieldName="_sdservicecategoryjobs" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="12e15656-d0af-45ee-bcf4-f08dfc030cc7" name="SdServiceCategoryJob" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="ServiceCatJobId">
+      <Property Id="cef3645c-39a1-4083-bf2c-ee241ccf5b61" name="ServiceCatJobId" type="Int32" label="ServiceCatJobId : Int32" kind="Persistent" identity="true" fieldName="_servicecatjobid" />
+      <Property Id="abe84d19-236a-45ff-a8ea-32c99c2066bd" name="Actionid" type="Int32" label="Actionid : Int32" nullable="true" kind="Persistent" fieldName="_actionid" />
+      <Property Id="9cf0ae80-041e-4d67-a4eb-05df3faa1ef1" name="Estimatetimecost" type="Int32" label="Estimatetimecost : Int32" nullable="true" kind="Persistent" fieldName="_estimatetimecost" />
+      <Property Id="cb1088bf-0bc3-44c5-aa40-70c2025ae1f5" name="Hasattachment" type="Int16" label="Hasattachment : Int16" nullable="true" kind="Persistent" fieldName="_hasattachment" />
+      <Property Id="9ea61c21-550d-4b92-990f-751324205301" name="Hascreditdate" type="Int16" label="Hascreditdate : Int16" nullable="true" kind="Persistent" fieldName="_hascreditdate" />
+      <Property Id="5a58b1f1-3fff-45d3-9b25-3edd22f6d435" name="Hasdescription" type="Int16" label="Hasdescription : Int16" nullable="true" kind="Persistent" fieldName="_hasdescription" />
+      <Property Id="b7246fbd-14c3-40b0-a37b-fa59c83bf470" name="Isintree" type="Int16" label="Isintree : Int16" nullable="true" kind="Persistent" fieldName="_isintree" />
+      <Property Id="7c448cc1-6f36-47c8-b04b-6d0dbd2a9b30" name="Roleid" type="Int32" label="Roleid : Int32" nullable="true" kind="Persistent" fieldName="_roleid" />
+      <Property Id="a3287584-3a92-48f8-86d2-84a607705664" name="Servicecategoryid" type="Int32" label="Servicecategoryid : Int32" nullable="true" kind="Persistent" fieldName="_servicecategoryid" />
+      <Property Id="d0832b16-c70b-4a3c-9c21-c3f43ec37671" name="Servicejobid" type="Int32" label="Servicejobid : Int32" nullable="true" kind="Persistent" fieldName="_servicejobid" />
+      <Property Id="14912bd8-3a28-49ec-9733-c7f5131773e9" name="Precedence" type="Int16" label="Precedence : Int16" nullable="true" kind="Persistent" fieldName="_precedence" />
+      <Property Id="24037fde-3d96-4aac-bbd9-ba3d2d0b2577" name="Multirequest" type="Int16" label="Multirequest : Int16" nullable="true" kind="Persistent" fieldName="_multirequest" />
+      <Property Id="1cab9b05-525d-4991-972e-ddfc06c8d25e" name="IsInserter" type="Int16" label="IsInserter : Int16" nullable="true" kind="Persistent" fieldName="_isinserter" />
+      <Property Id="6842c7a2-7b6f-4a3a-a38d-9d22b2996dc4" name="Enabled" type="Int16" label="Enabled : Int16" nullable="true" kind="Persistent" fieldName="_enabled" />
+      <AssociationTargets>
+        <Association Id="eaa0fe53-f561-4599-a208-77c8b9d1bc99" SourceMultiplicity="ZeroOne" name="SdServiceCategoryJobHasSdServiceJob">
+          <DomainClassMoniker name="/EntitiesModel1/SdServiceJob" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="56b0adda-da97-45f6-a428-c9d0738859ed">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdServiceJob/SdServiceCategoryJobs" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="0d9a4702-3925-42de-a723-9a48e1525f76">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdServiceCategoryJob/Sdservicejob" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+        <Association Id="4e721150-f003-4efd-9c92-9ac65cec8a6c" SourceMultiplicity="ZeroOne" name="SdServiceCategoryJobHasSdItRole">
+          <DomainClassMoniker name="/EntitiesModel1/SdItRole" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="04e65cff-b672-4997-a11a-fb7db2d6519e">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdItRole/SdServiceCategoryJobs" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="295212b1-5130-4825-9f8b-e6a269a8fb9c">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdServiceCategoryJob/Sditrole" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+        <Association Id="5dd93d21-005b-44c4-91b9-8e01879e77e4" SourceMultiplicity="ZeroOne" name="SdServiceCategoryJobHasSdServiceCategory">
+          <DomainClassMoniker name="/EntitiesModel1/SdServiceCategory" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="eeaf57f2-019f-4b44-a0c2-5bbdd15f1cad">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdServiceCategory/SdServiceCategoryJobs" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="c50b4735-9380-4254-88ff-5320f5a360da">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdServiceCategoryJob/Sdservicecategory" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="95c54cb0-9741-4a8c-8138-230c104404ab">
+          <NavigationalProperty Id="4d36dc71-5927-4c63-966a-ed6379245195" name="Sdservicejob" type="SdServiceJob" label="Sdservicejob : SdServiceJob" nullable="true" kind="Persistent" fieldName="_sdservicejob" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="86f6b654-e45a-4f95-803f-5b70095eff12">
+          <NavigationalProperty Id="065b0856-0e73-49b4-92f4-7f5be483b8df" name="Sditrole" type="SdItRole" label="Sditrole : SdItRole" nullable="true" kind="Persistent" fieldName="_sditrole" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="771fbf96-bd74-4fa0-bf47-524dc8183bc0">
+          <NavigationalProperty Id="3896b72d-ee64-434b-bb47-264a122610cd" name="Sdservicecategory" type="SdServiceCategory" label="Sdservicecategory : SdServiceCategory" nullable="true" kind="Persistent" fieldName="_sdservicecategory" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="1574e836-ea24-4c97-91d3-f85b453d2669" name="SdServiceCategory" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="ServiceCatId">
+      <Property Id="7301313b-9d19-4263-b897-5880622b9f6b" name="ServiceCatId" type="Int32" label="ServiceCatId : Int32" kind="Persistent" identity="true" fieldName="_servicecatid" />
+      <Property Id="2956be78-6dd4-454a-95ad-acba7aa3f49f" name="Description" label="Description : String" kind="Persistent" fieldName="_description" />
+      <Property Id="c1d44646-e9dd-4f4a-b6a2-e27fb0e521cb" name="Enabled" type="Int16" label="Enabled : Int16" nullable="true" kind="Persistent" fieldName="_enabled" />
+      <Property Id="70324b2a-9ea9-4293-bf22-14d361028353" name="Hasfilter" type="Int16" label="Hasfilter : Int16" nullable="true" kind="Persistent" fieldName="_hasfilter" />
+      <Property Id="14a7585a-ccc7-4c30-8343-a97da50b8e0d" name="Hasjob" type="Int16" label="Hasjob : Int16" nullable="true" kind="Persistent" fieldName="_hasjob" />
+      <Property Id="5bbb94aa-0d81-474e-baa7-16d4ca8ac320" name="Parentid" type="Int32" label="Parentid : Int32" nullable="true" kind="Persistent" fieldName="_parentid" />
+      <Property Id="57970933-d7b0-438c-a1af-74b798ef1a69" name="Title" label="Title : String" kind="Persistent" fieldName="_title" />
+      <Property Id="7cc3cc84-1bb8-487f-9dee-03e135535b9a" name="Hasmenu" type="Int16" label="Hasmenu : Int16" nullable="true" kind="Persistent" fieldName="_hasmenu" />
+      <Property Id="17e4f421-b3ea-445d-a903-d6d44677ffa0" name="Hasdevice" type="Int16" label="Hasdevice : Int16" nullable="true" kind="Persistent" fieldName="_hasdevice" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="433dc6c8-0ede-40ce-8339-77df6b409b71">
+          <NavigationalProperty Id="e0687129-ebb3-4d2a-8cd5-ebdd85b95246" name="SdWorks" type="IList&lt;SdWork&gt;" label="SdWorks : IList&lt;SdWork&gt;" nullable="true" kind="Persistent" fieldName="_sdworks" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="3b1c8cbd-fdfb-47f8-a3a1-74351ec1f483">
+          <NavigationalProperty Id="83a1ffdb-b175-44ab-ba48-f3da755c2bf1" name="SdServiceCategoryJobs" type="IList&lt;SdServiceCategoryJob&gt;" label="SdServiceCategoryJobs : IList&lt;SdServiceCategoryJob&gt;" nullable="true" kind="Persistent" fieldName="_sdservicecategoryjobs" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="3f31464c-3f3b-4a04-9141-00f374d80af6" name="SdRequestState" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="d62eeb7b-d94d-4bdb-bc0a-d233c8e86541" name="SdReqStateId" type="Int32" label="SdReqStateId : Int32" kind="Persistent" identity="true" fieldName="_sdreqstateid" />
+      <Property Id="7ca93b7a-edd8-4303-ba1d-75534f6e534a" name="StateTitle" label="StateTitle : String" kind="Persistent" fieldName="_statetitle" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="9263c310-b5a9-4b15-9337-072a52fe427f">
+          <NavigationalProperty Id="0f2ca2b2-c85b-42ef-bf47-62561ec3a15e" name="SdUserRequests" type="IList&lt;SdUserRequest&gt;" label="SdUserRequests : IList&lt;SdUserRequest&gt;" nullable="true" kind="Persistent" fieldName="_sduserrequests" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="ce0cca31-2953-4bea-8e7c-a12f43e700ce" name="SdRequestProcess" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="0423ce8b-4be6-462c-b1ec-ae5f6ff50836" name="ReqProcessId" type="Int32" label="ReqProcessId : Int32" kind="Persistent" identity="true" fieldName="_reqprocessid" />
+      <Property Id="a18ca399-9631-4025-9a19-6df7dec9d2b6" name="Description" label="Description : String" kind="Persistent" fieldName="_description" />
+      <Property Id="c28a6154-ddfc-4bf3-bbd2-307e930feb59" name="Financialcost" type="Int32" label="Financialcost : Int32" nullable="true" kind="Persistent" fieldName="_financialcost" />
+      <Property Id="ffcc6b93-a0f6-4d83-8842-362f85020771" name="Itexpertid" type="Int32" label="Itexpertid : Int32" nullable="true" kind="Persistent" fieldName="_itexpertid" />
+      <Property Id="068cbba7-f841-41e9-9f8c-0fe7c9233f83" name="Processdate" type="DateTime" label="Processdate : DateTime" nullable="true" kind="Persistent" fieldName="_processdate" />
+      <Property Id="0e5a635d-d19e-47ca-8462-cf330b984e74" name="Requestid" type="Int32" label="Requestid : Int32" nullable="true" kind="Persistent" fieldName="_requestid" />
+      <Property Id="7c6ad08a-6560-4111-89bc-fa3c9c42f47f" name="Servicecategoryjobid" type="Int32" label="Servicecategoryjobid : Int32" nullable="true" kind="Persistent" fieldName="_servicecategoryjobid" />
+      <Property Id="8c771ee8-c9a7-4591-87ef-d347a23109dd" name="Timecost" type="Int64" label="Timecost : Int64" nullable="true" kind="Persistent" fieldName="_timecost" />
+    </DomainClass>
+    <DomainClass Id="d10279a4-f5d8-4385-ac10-4d1e80e9fd56" name="SdRequestAttachment" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="ReuestAttachId">
+      <Property Id="b1d2715b-c008-47ad-91dd-a985b78bdd85" name="ReuestAttachId" type="Int32" label="ReuestAttachId : Int32" kind="Persistent" identity="true" fieldName="_reuestattachid" />
+      <Property Id="973e9f3b-8b71-4377-a0ab-582e2309b70e" name="Requestid" type="Int32" label="Requestid : Int32" nullable="true" kind="Persistent" fieldName="_requestid" />
+      <Property Id="e5068033-6a5c-4624-a94b-6ebd11ab8923" name="Filetype" label="Filetype : String" kind="Persistent" fieldName="_filetype" />
+      <Property Id="5e1f3965-963f-4304-82e8-3b4e51256298" name="Filename" label="Filename : String" kind="Persistent" fieldName="_filename" />
+      <Property Id="050df0d6-1628-4a12-9b32-edb1a54c338d" name="Description" label="Description : String" kind="Persistent" fieldName="_description" />
+      <Property Id="4a481762-2fb7-4d76-8e69-128893bf4103" name="Content" type="Byte[]" label="Content : Byte[]" kind="Persistent" fieldName="_content" />
+      <AssociationTargets>
+        <Association Id="21851576-9184-473f-bb39-4f02606214ef" SourceMultiplicity="ZeroOne" name="SdRequestAttachmentHasSdUserRequest">
+          <DomainClassMoniker name="/EntitiesModel1/SdUserRequest" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="76d0debf-38a0-4439-82e2-97b8e2df408c">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdUserRequest/SdRequestAttachments" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="eb40170c-8540-4fce-a6eb-d999594441ee">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdRequestAttachment/Sduserrequest" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="3935e2bd-a462-4d74-893d-dde1108dba01">
+          <NavigationalProperty Id="2a34bb20-0829-418d-b1b4-c4dc6ab65789" name="Sduserrequest" type="SdUserRequest" label="Sduserrequest : SdUserRequest" nullable="true" kind="Persistent" fieldName="_sduserrequest" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="e5fe4345-87d7-46e3-a74d-fbe0fe1101c7" name="SdRequestAssignedExpert" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="87bddc5a-1269-40f2-ac25-f38f5e2bd43e" name="ReqiestExpertId" type="Int32" label="ReqiestExpertId : Int32" kind="Persistent" identity="true" fieldName="_reqiestexpertid" />
+      <Property Id="dc204444-3f21-485f-8301-b37c3b35dad3" name="Assigndate" type="DateTime" label="Assigndate : DateTime" nullable="true" kind="Persistent" fieldName="_assigndate" />
+      <Property Id="e6c24666-6db4-4217-bb96-83ce273343ef" name="Assigntype" type="Int16" label="Assigntype : Int16" nullable="true" kind="Persistent" fieldName="_assigntype" />
+      <Property Id="d1181d3b-e187-4579-9de7-acfaaed1e8a9" name="Ishead" type="Int16" label="Ishead : Int16" nullable="true" kind="Persistent" fieldName="_ishead" />
+      <Property Id="32f95dd2-2238-4895-9104-75cf8ee7013a" name="Requestid" type="Int32" label="Requestid : Int32" nullable="true" kind="Persistent" fieldName="_requestid" />
+      <Property Id="1ecb6f8d-404a-4a97-9763-bc0a1fe0bc79" name="ExpertPerId" type="Int32" label="ExpertPerId : Int32" nullable="true" kind="Persistent" fieldName="_expertperid" />
+    </DomainClass>
+    <DomainClass Id="692952a3-be8b-437c-b68a-fefdaf4b57ad" name="SdOffice" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="c3c1e103-a53b-4152-8af3-9c7c49e62b22" name="OfficeId" type="Int32" label="OfficeId : Int32" kind="Persistent" identity="true" fieldName="_officeid" />
+      <Property Id="dcc2e6b6-bf1c-4550-875b-4d6190ada560" name="Title" label="Title : String" kind="Persistent" fieldName="_title" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="f86614ef-4b14-48a9-b4d4-ed133b315404">
+          <NavigationalProperty Id="8e551038-259e-4a05-901e-1e67844b5ae0" name="SdItExperts" type="IList&lt;SdItExpert&gt;" label="SdItExperts : IList&lt;SdItExpert&gt;" nullable="true" kind="Persistent" fieldName="_sditexperts" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="0554156c-609e-416c-ba92-f8a0227cd7b9">
+          <NavigationalProperty Id="85239d96-ff57-4aab-bc75-c5a0be07f4b8" name="SdItRoles" type="IList&lt;SdItRole&gt;" label="SdItRoles : IList&lt;SdItRole&gt;" nullable="true" kind="Persistent" fieldName="_sditroles" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="d3891923-210b-4fce-aee6-642253f820f9" name="SdItRoleExpert" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="RoleExpertId">
+      <Property Id="39b098c2-3cd6-4f2a-8309-67dcb2014a97" name="RoleExpertId" type="Int32" label="RoleExpertId : Int32" kind="Persistent" identity="true" fieldName="_roleexpertid" />
+      <Property Id="56637a5d-e379-4aa4-ae73-4ca42526c3c8" name="Expertid" type="Int32" label="Expertid : Int32" nullable="true" kind="Persistent" fieldName="_expertid" />
+      <Property Id="e583301d-8180-4f76-b25d-a56c2ce8a379" name="Itroleid" type="Int32" label="Itroleid : Int32" nullable="true" kind="Persistent" fieldName="_itroleid" />
+      <Property Id="a07dd551-b107-41d9-999b-a4ee9f25b3bb" name="Weight" type="Int16" label="Weight : Int16" nullable="true" kind="Persistent" fieldName="_weight" />
+      <AssociationTargets>
+        <Association Id="6c9e4f5a-7880-4732-b782-199713a64d72" SourceMultiplicity="ZeroOne" name="SdItRoleExpertHasSdItRole">
+          <DomainClassMoniker name="/EntitiesModel1/SdItRole" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="0db8f72b-ca28-4786-a784-535fabf82d14">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdItRole/SdItRoleExperts" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="a8c8bd82-4d34-41d2-a17d-eb2102fc1099">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdItRoleExpert/Sditrole" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+        <Association Id="5327eee9-400a-4aa8-8e93-735dbb374c92" SourceMultiplicity="ZeroOne" name="SdItRoleExpertHasSdItExpert">
+          <DomainClassMoniker name="/EntitiesModel1/SdItExpert" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="613fdcbf-04fe-40a2-81b9-5e154e920002">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdItExpert/SdItRoleExperts" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="ff429d32-1392-434d-8e72-811cadbd6f15">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdItRoleExpert/Sditexpert" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="8653e87b-aa4b-417e-a4db-3d1f2e5d113f">
+          <NavigationalProperty Id="d36fb4f1-0a4a-44da-9470-b09a6797a2ce" name="Sditrole" type="SdItRole" label="Sditrole : SdItRole" nullable="true" kind="Persistent" fieldName="_sditrole" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="6c17544a-0527-457b-887d-2fd984330085">
+          <NavigationalProperty Id="ae72ba16-ab19-4aa4-8813-79c42ffcc5cc" name="Sditexpert" type="SdItExpert" label="Sditexpert : SdItExpert" nullable="true" kind="Persistent" fieldName="_sditexpert" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="afa043bb-772b-4fe4-b407-0f98e26f3e59" name="SdItRole" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="RoleId">
+      <Property Id="220514c3-eff2-4e9a-937f-6b32ac8bb527" name="RoleId" type="Int32" label="RoleId : Int32" kind="Persistent" identity="true" fieldName="_roleid" />
+      <Property Id="f9ecf210-776c-44ad-84a7-bf9412d56f7e" name="Description" label="Description : String" kind="Persistent" fieldName="_description" />
+      <Property Id="e0330c13-830f-47b0-b37c-cd2325e1aeb4" name="Officeid" type="Int32" label="Officeid : Int32" nullable="true" kind="Persistent" fieldName="_officeid" />
+      <Property Id="0e25b07a-67a2-462b-a029-bfb790039b44" name="Title" label="Title : String" kind="Persistent" fieldName="_title" />
+      <AssociationTargets>
+        <Association Id="bc05dc3a-e6df-48a9-b54d-d92d40bd802a" SourceMultiplicity="ZeroOne" name="SdItRoleHasSdOffice">
+          <DomainClassMoniker name="/EntitiesModel1/SdOffice" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="cec5d5ea-1193-47fa-b1cf-a3e8437df86f">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdOffice/SdItRoles" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="ed47cd9b-dfa4-41e8-a174-3e9aa0c30609">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdItRole/Sdoffice" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="c41f7068-6d75-4c67-924a-225e07e0eea9">
+          <NavigationalProperty Id="13981f7f-1e84-4b60-b0c6-2614500f724b" name="Sdoffice" type="SdOffice" label="Sdoffice : SdOffice" nullable="true" kind="Persistent" fieldName="_sdoffice" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="4cdc9be1-239b-4da6-8e3e-8f22f58aae63">
+          <NavigationalProperty Id="34742260-c284-42f2-9fde-b4bb341796b8" name="SdItRoleExperts" type="IList&lt;SdItRoleExpert&gt;" label="SdItRoleExperts : IList&lt;SdItRoleExpert&gt;" nullable="true" kind="Persistent" fieldName="_sditroleexperts" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="6a6732da-b84a-4f6f-be02-65137ef6b388">
+          <NavigationalProperty Id="092eef7f-910b-494d-aaf5-d699068616a1" name="SdServiceCategoryJobs" type="IList&lt;SdServiceCategoryJob&gt;" label="SdServiceCategoryJobs : IList&lt;SdServiceCategoryJob&gt;" nullable="true" kind="Persistent" fieldName="_sdservicecategoryjobs" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="d4c99450-a4df-497e-86da-c36ffe4da747" name="SdItExpert" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="ItExpertId">
+      <Property Id="11ba7775-4ea1-4f4b-bc83-cfdb8bb61e93" name="ItExpertId" type="Int32" label="ItExpertId : Int32" kind="Persistent" identity="true" fieldName="_itexpertid" />
+      <Property Id="935fea2f-d364-479b-9984-521bcad98dae" name="Officeid" type="Int32" label="Officeid : Int32" nullable="true" kind="Persistent" fieldName="_officeid" />
+      <Property Id="424388af-4f43-4193-8d40-21a0e00548f1" name="Userid" type="Int32" label="Userid : Int32" nullable="true" kind="Persistent" fieldName="_userid" />
+      <Property Id="9fbee711-0eaa-42d9-a461-5e6a4ae83235" name="Enabled" type="Int16" label="Enabled : Int16" nullable="true" kind="Persistent" fieldName="_enabled" />
+      <AssociationTargets>
+        <Association Id="8c1094f0-3d12-459f-a234-a40780d07c6f" SourceMultiplicity="ZeroOne" name="SdItExpertHasSdOffice">
+          <DomainClassMoniker name="/EntitiesModel1/SdOffice" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="8d1162ce-83dd-4c0b-9257-f86a777f7d28">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdOffice/SdItExperts" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="33cb4eb3-e485-4ab7-90db-1a32b17a06f2">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdItExpert/Sdoffice" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="09c82e20-7e8d-4aef-a99b-6ce278698ad8">
+          <NavigationalProperty Id="d5f8c8a7-e270-45da-a4b9-9913002fa0f1" name="Sdoffice" type="SdOffice" label="Sdoffice : SdOffice" nullable="true" kind="Persistent" fieldName="_sdoffice" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="24cbb5f7-7b70-4e95-a493-a73deb57a639">
+          <NavigationalProperty Id="ff9e2296-c1d5-409a-9b69-359005a82199" name="SdItRoleExperts" type="IList&lt;SdItRoleExpert&gt;" label="SdItRoleExperts : IList&lt;SdItRoleExpert&gt;" nullable="true" kind="Persistent" fieldName="_sditroleexperts" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="7d7bfcaa-1a94-4a5f-8c6d-51ade7493ce5" name="SdFilterCategory" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="FilterId">
+      <Property Id="b8a0f196-d571-499a-ac1c-95d44320cfce" name="FilterId" type="Int32" label="FilterId : Int32" kind="Persistent" identity="true" fieldName="_filterid" />
+      <Property Id="e07fda39-450b-440f-8589-446fa3600bc8" name="Menuparentid" type="Int32" label="Menuparentid : Int32" nullable="true" kind="Persistent" fieldName="_menuparentid" />
+      <Property Id="573d5686-2fdc-4152-9d54-fb6503646541" name="Objecttypeid" type="Int32" label="Objecttypeid : Int32" nullable="true" kind="Persistent" fieldName="_objecttypeid" />
+      <Property Id="6cee6007-6a73-46ac-9231-8e1d1f9fcd1f" name="Servicecaegoryid" type="Int32" label="Servicecaegoryid : Int32" nullable="true" kind="Persistent" fieldName="_servicecaegoryid" />
+    </DomainClass>
+    <DomainClass Id="5d2abf8b-db83-403f-acba-69407e26a330" name="VwPersonel" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="f3d28e7b-edeb-4a51-a8e7-e36652c8b688" name="ChartId" type="Int32" label="ChartId : Int32" kind="Persistent" fieldName="_chartid" />
+      <Property Id="429746af-9c0a-45ad-877a-cbea24267058" name="EndDate" label="EndDate : String" kind="Persistent" fieldName="_enddate" />
+      <Property Id="91e6e357-d97a-46d4-b936-3455985df8a5" name="ExpireDate" label="ExpireDate : String" kind="Persistent" fieldName="_expiredate" />
+      <Property Id="104f88fd-13c5-4609-8f05-9cc936649e9d" name="FullName" label="FullName : String" kind="Persistent" fieldName="_fullname" />
+      <Property Id="f4f6c5d1-1e6d-4c37-bcfc-597f3143f639" name="IndependentId" type="Int32" label="IndependentId : Int32" nullable="true" kind="Persistent" fieldName="_independentid" />
+      <Property Id="2d63253b-5968-4fdf-9666-093bac1400ed" name="Isactivate" type="Int16" label="Isactivate : Int16" kind="Persistent" fieldName="_isactivate" />
+      <Property Id="5b4d3521-9ba5-4345-8a8c-8d64be3ea1b6" name="Name" label="Name : String" kind="Persistent" fieldName="_name" />
+      <Property Id="ec46b096-ca6c-40ae-8616-39ed30258e35" name="NationalNo" label="NationalNo : String" kind="Persistent" fieldName="_nationalno" />
+      <Property Id="da81e74c-b7c0-4345-b837-f927ba17cb9f" name="PerFname" label="PerFname : String" kind="Persistent" fieldName="_perfname" />
+      <Property Id="6f7d19a5-dc2c-419c-989c-b728f2bd0f1d" name="PerId" type="Int32" label="PerId : Int32" kind="Persistent" identity="true" fieldName="_perid" />
+      <Property Id="8439c15e-14ac-467f-bfa4-46fa6dd9bdfd" name="PerLname" label="PerLname : String" kind="Persistent" fieldName="_perlname" />
+      <Property Id="c8788f57-0d0a-4fec-b8c3-0371bc5d5c06" name="PerNo" type="Int32" label="PerNo : Int32" kind="Persistent" fieldName="_perno" />
+      <Property Id="e3010bc0-103e-4378-92fa-7cc84efa529f" name="PerType" type="Int16" label="PerType : Int16" kind="Persistent" fieldName="_pertype" />
+      <Property Id="7370d427-0e6c-4047-aace-128bea31b57f" name="PositionDesc" label="PositionDesc : String" kind="Persistent" fieldName="_positiondesc" />
+      <Property Id="de7a09c7-d6c1-4b70-a477-b862e6e4ea13" name="PositionId" type="Int32" label="PositionId : Int32" kind="Persistent" fieldName="_positionid" />
+    </DomainClass>
+    <DomainClass Id="898d073e-eda7-4776-bf2a-61116a6afcdc" name="Objecttype" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="a2410203-e58d-42f2-85a9-9eeea33276dd" name="ObjecttypeId" type="Int32" label="ObjecttypeId : Int32" kind="Persistent" identity="true" fieldName="_objecttypeid" />
+      <Property Id="7b54926c-89cd-47f1-a55e-99ffa60903f6" name="Deliverable" type="Int32" label="Deliverable : Int32" kind="Persistent" fieldName="_deliverable" />
+      <Property Id="6b152ebe-6bcc-41c7-a0f5-fc02c7ff6ebf" name="Denumerable" type="Int16" label="Denumerable : Int16" nullable="true" kind="Persistent" fieldName="_denumerable" />
+      <Property Id="37b44164-4a39-4cd3-a52a-366d0b800b96" name="ObjecttypeDesc" label="ObjecttypeDesc : String" kind="Persistent" fieldName="_objecttypedesc" />
+      <Property Id="a7778fcc-95fc-4d87-a966-c6e32c233745" name="Sizeable" type="Int16" label="Sizeable : Int16" nullable="true" kind="Persistent" fieldName="_sizeable" />
+      <Property Id="695b9709-1390-47a8-916d-58bebcc40fdd" name="Sizeabledesc" label="Sizeabledesc : String" kind="Persistent" fieldName="_sizeabledesc" />
+    </DomainClass>
+    <DomainClass Id="b421403a-2a3b-41b9-a7c4-2bdd17af0cba" name="SdRequestWork" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="Id">
+      <Property Id="001fe493-54e8-4f9b-8a5d-d5480bfcb60d" name="CreateDate" type="DateTime" label="CreateDate : DateTime" nullable="true" kind="Persistent" fieldName="_createdate" />
+      <Property Id="57d15dcc-60cb-4263-a1ca-a5112110efab" name="Description" label="Description : String" kind="Persistent" fieldName="_description" />
+      <Property Id="17afecb9-b877-4756-9caa-b34b8cee42fa" name="RequestId" type="Int32" label="RequestId : Int32" nullable="true" kind="Persistent" fieldName="_requestid" />
+      <Property Id="c0fe0e2b-42c3-4cd4-9e61-c7f0302d5e52" name="UserId" type="Int32" label="UserId : Int32" nullable="true" kind="Persistent" fieldName="_userid" />
+      <Property Id="e017600b-3d57-4be5-863b-f6cc2dac6703" name="RequestWorkId" type="Int32" label="RequestWorkId : Int32" kind="Persistent" identity="true" fieldName="_requestworkid" />
+      <Property Id="b4dc9bb8-9e54-4043-84d9-419d174dfe77" name="SdWorkId" type="Int32" label="SdWorkId : Int32" nullable="true" kind="Persistent" fieldName="_sdworkid" />
+      <Property Id="0f2894a0-af13-4dde-8a19-b34db82c9b76" name="WorkTime" type="Int32" label="WorkTime : Int32" nullable="true" kind="Persistent" fieldName="_worktime" />
+      <Property Id="cc119fd5-e232-47e7-88fe-83876a99d4bd" name="WorkCost" type="Int32" label="WorkCost : Int32" nullable="true" kind="Persistent" fieldName="_workcost" />
+      <AssociationTargets>
+        <Association Id="87d86c5d-f0b7-4177-978e-1252d8d06cb2" SourceMultiplicity="ZeroOne" name="SdRequestWorkHasSdUserRequest">
+          <DomainClassMoniker name="/EntitiesModel1/SdUserRequest" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="c8927e16-9527-4d3c-a495-bf33d4a22627">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdUserRequest/SdRequestWorks" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="abfbf0d9-6009-4706-96f5-952aac9a98ed">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdRequestWork/Sduserrequest" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+        <Association Id="79db81bf-3781-4628-8f37-b5de3d422bd2" SourceMultiplicity="ZeroOne" name="SdRequestWorkHasSdWork">
+          <DomainClassMoniker name="/EntitiesModel1/SdWork" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="b53fabc7-a4da-4a60-8e38-9d4dc04239e4">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdWork/SdRequestWorks" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="6230c0b3-993a-451f-b9a7-66d81dc1c01a">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdRequestWork/Sdwork" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="59e41167-eac6-463f-b234-896569ebb97c">
+          <NavigationalProperty Id="bd602b6c-7663-4765-a0d6-14877ec01df5" name="Sduserrequest" type="SdUserRequest" label="Sduserrequest : SdUserRequest" nullable="true" kind="Persistent" fieldName="_sduserrequest" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="5b4f9fec-e9ec-4406-b1ef-9ed791912141">
+          <NavigationalProperty Id="5e1df102-949d-490d-81d8-a8d649888707" name="Sdwork" type="SdWork" label="Sdwork : SdWork" nullable="true" kind="Persistent" fieldName="_sdwork" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="17ed86b3-3756-4c80-8d60-69701c77d235" name="SdWork" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="WorkId">
+      <Property Id="7b905870-8af3-4fb7-957a-92e6f7baa5d2" name="WorkId" type="Int32" label="WorkId : Int32" kind="Persistent" identity="true" fieldName="_workid" />
+      <Property Id="97cf1ed2-dbc3-47aa-a11a-45d0b59015c6" name="Title" label="Title : String" kind="Persistent" fieldName="_title" />
+      <Property Id="7d206c17-6627-4df7-9433-48df60bd833f" name="EstimateTime" type="Int32" label="EstimateTime : Int32" nullable="true" kind="Persistent" fieldName="_estimatetime" />
+      <Property Id="f12db6a6-bc3e-41d8-8dde-a3045907c739" name="EstimateCost" type="Int32" label="EstimateCost : Int32" nullable="true" kind="Persistent" fieldName="_estimatecost" />
+      <Property Id="6b7ee466-b6ce-46b9-9766-a6a60c2f69fc" name="SdServiceCatId" type="Int32" label="SdServiceCatId : Int32" nullable="true" kind="Persistent" fieldName="_sdservicecatid" />
+      <AssociationTargets>
+        <Association Id="80c757e1-602d-4448-a01c-9e40e8eac8c4" SourceMultiplicity="ZeroOne" name="SdWorkHasSdServiceCategory">
+          <DomainClassMoniker name="/EntitiesModel1/SdServiceCategory" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="e6373fff-f54b-4188-87bc-351000154fd9">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdServiceCategory/SdWorks" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="ed7f96ff-8ea3-43f3-b2d2-770d37e31175">
+              <NavigationalPropertyMoniker name="/EntitiesModel1/SdWork/Sdservicecategory" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="4f5032a2-1a47-411b-b463-b22e712d328d">
+          <NavigationalProperty Id="35e6845a-0977-40cf-90f9-db2a6669be9e" name="SdRequestWorks" type="IList&lt;SdRequestWork&gt;" label="SdRequestWorks : IList&lt;SdRequestWork&gt;" nullable="true" kind="Persistent" fieldName="_sdrequestworks" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="efa383d6-503e-4559-87d1-655f513efa69">
+          <NavigationalProperty Id="3025260f-e7c3-4cf7-bac9-157e96b70e24" name="Sdservicecategory" type="SdServiceCategory" label="Sdservicecategory : SdServiceCategory" nullable="true" kind="Persistent" fieldName="_sdservicecategory" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="d3cf2d7a-5041-4bec-9505-3f28ab42e2a4" name="Requestcartablecycle" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" concurrencyMode="None" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="c45b7857-40aa-442d-945e-6ebc974b2716" name="ActionId" type="Int32" label="ActionId : Int32" kind="Persistent" fieldName="_actionid" />
+      <Property Id="ff7da205-a732-4c36-9d73-ff20208608b0" name="ActionName" label="ActionName : String" kind="Persistent" fieldName="_actionname" />
+      <Property Id="69e30d0f-abad-42a3-ae34-bdc6d6ad06af" name="ActionParentId" type="Int32" label="ActionParentId : Int32" nullable="true" kind="Persistent" fieldName="_actionparentid" />
+      <Property Id="f643493f-e06b-47bd-810a-88d1b2eb703a" name="ArchiveCode" type="Int32" label="ArchiveCode : Int32" nullable="true" kind="Persistent" fieldName="_archivecode" />
+      <Property Id="31b52018-5f73-46c2-aa50-ee3424d90d86" name="ArchiveDate" label="ArchiveDate : String" kind="Persistent" fieldName="_archivedate" />
+      <Property Id="c408d50b-28f1-46fd-b2b6-add7d97c5416" name="BeTerminated" type="Int16" label="BeTerminated : Int16" nullable="true" kind="Persistent" fieldName="_beterminated" />
+      <Property Id="389bcc16-567e-4c68-bad0-04ac0f1a00ed" name="Createdate" type="DateTime" label="Createdate : DateTime" nullable="true" kind="Persistent" fieldName="_createdate" />
+      <Property Id="6863350d-ea5c-4126-b6bb-4f812768c344" name="CycleId" type="Int32" label="CycleId : Int32" kind="Persistent" identity="true" fieldName="_cycleid" />
+      <Property Id="e47add66-5328-4266-9f44-193e5d5979bf" name="CycleRow" type="Int16" label="CycleRow : Int16" kind="Persistent" fieldName="_cyclerow" />
+      <Property Id="3aa45879-daa3-476b-a3eb-966462ed6d12" name="CyclestatusChangeDate" type="DateTime" label="CyclestatusChangeDate : DateTime" nullable="true" kind="Persistent" fieldName="_cyclestatuschangedate" />
+      <Property Id="94e85f6a-4dc6-4188-b683-1397896d9225" name="CycleStatusDesc" label="CycleStatusDesc : String" kind="Persistent" fieldName="_cyclestatusdesc" />
+      <Property Id="1907c53e-0b45-48fe-9e76-f8adc9a984c3" name="CycleStatusId" type="Int64" label="CycleStatusId : Int64" nullable="true" kind="Persistent" fieldName="_cyclestatusid" />
+      <Property Id="60f5e12c-0b4d-4993-9bd9-e5ebf6417f7d" name="IntialingComment" label="IntialingComment : String" kind="Persistent" fieldName="_intialingcomment" />
+      <Property Id="f263c7d8-8ff5-4deb-9613-b75811d34919" name="NoArchiveDate" label="NoArchiveDate : String" kind="Persistent" fieldName="_noarchivedate" />
+      <Property Id="7fc8cc44-22b0-4dd2-8e4e-da41c94d0e66" name="OwnerChartName" label="OwnerChartName : String" kind="Persistent" fieldName="_ownerchartname" />
+      <Property Id="18bbcba8-01ea-47b4-96fd-cc0c7c09f7b7" name="Ownername" label="Ownername : String" kind="Persistent" fieldName="_ownername" />
+      <Property Id="2c884c8a-e4d1-4914-9311-740dc7fee1b4" name="Personelname" label="Personelname : String" kind="Persistent" fieldName="_personelname" />
+      <Property Id="d1859e3f-fe3c-4781-872a-d6bf1293bc16" name="PositionTypeId" type="Int16" label="PositionTypeId : Int16" nullable="true" kind="Persistent" fieldName="_positiontypeid" />
+      <Property Id="354ed5a5-a42f-4123-aa85-7800c7aefa92" name="ReceiverNameFamily" label="ReceiverNameFamily : String" kind="Persistent" fieldName="_receivernamefamily" />
+      <Property Id="6f0b7774-10f3-4bee-90e1-ef30eff7b60d" name="ReceiverPerId" type="Int32" label="ReceiverPerId : Int32" kind="Persistent" fieldName="_receiverperid" />
+      <Property Id="7f7382c5-397f-4ca4-929c-86f663a4f417" name="SendDate" type="DateTime" label="SendDate : DateTime" nullable="true" kind="Persistent" fieldName="_senddate" />
+      <Property Id="df74c400-cc10-495f-b7cd-740b6929bbe4" name="SenderNameFamily" label="SenderNameFamily : String" kind="Persistent" fieldName="_sendernamefamily" />
+      <Property Id="ba539d64-123e-41fe-900e-61c3798449ad" name="SenderPerId" type="Int32" label="SenderPerId : Int32" kind="Persistent" fieldName="_senderperid" />
+      <Property Id="bf6d4758-a71e-416d-8326-1fadbf928d43" name="Sendtime" label="Sendtime : String" kind="Persistent" fieldName="_sendtime" />
+      <Property Id="e8758b87-7a26-441d-8c6e-5252c6e07531" name="SerReqId" type="Int32" label="SerReqId : Int32" nullable="true" kind="Persistent" fieldName="_serreqid" />
+      <Property Id="220d9602-9229-43e1-b726-55e534f11183" name="Servicecategory" label="Servicecategory : String" kind="Persistent" fieldName="_servicecategory" />
+      <Property Id="5ebb0b4d-4e88-47b1-badb-ee6f795a5308" name="Servicejob" label="Servicejob : String" kind="Persistent" fieldName="_servicejob" />
+    </DomainClass>
+    <DomainClass Id="6c4de546-582f-45fb-8928-db3b67bac53a" name="VwHokm" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="10c675d8-bf9a-4651-ad46-3c5e40e82509" name="Address" label="Address : String" kind="Persistent" fieldName="_address" />
+      <Property Id="9471edac-b9db-4af6-9513-2c6caa23f4ea" name="BirthDate" label="BirthDate : String" kind="Persistent" fieldName="_birthdate" />
+      <Property Id="862c7d1f-1000-4b56-a15c-eefe7f831b3a" name="EmcostoIndependSrl" type="Int64" label="EmcostoIndependSrl : Int64" kind="Persistent" fieldName="_emcostoindependsrl" />
+      <Property Id="05efb25d-a0c1-4681-b594-780427900fe1" name="EmcostoIndependTitle" label="EmcostoIndependTitle : String" kind="Persistent" fieldName="_emcostoindependtitle" />
+      <Property Id="ac741574-4d11-4f7f-aafb-fb92b932c1a4" name="EmcostoSrl" type="Int32" label="EmcostoSrl : Int32" kind="Persistent" fieldName="_emcostosrl" />
+      <Property Id="0686fceb-2590-4b15-beb4-ed0def2b71dd" name="EmcostoSrlCostAssign" type="Int32" label="EmcostoSrlCostAssign : Int32" kind="Persistent" fieldName="_emcostosrlcostassign" />
+      <Property Id="b74ea93f-cc1d-4d15-b951-d383ff1ea86f" name="EmcostoTitle" label="EmcostoTitle : String" kind="Persistent" fieldName="_emcostotitle" />
+      <Property Id="ff581706-2c0e-4c21-9ef9-1b0ed536c3da" name="EmemptpDes" label="EmemptpDes : String" kind="Persistent" fieldName="_ememptpdes" />
+      <Property Id="604206f0-e9c9-4592-b04e-bb1bf8f19071" name="EmemptpSrl" type="Int32" label="EmemptpSrl : Int32" nullable="true" kind="Persistent" fieldName="_ememptpsrl" />
+      <Property Id="f17ba24b-2983-4488-ae43-6b812ca95ff0" name="EmpblcpSrl" type="Int32" label="EmpblcpSrl : Int32" kind="Persistent" fieldName="_empblcpsrl" />
+      <Property Id="122dbb4a-ec27-43cd-9a33-3bdf87d504ea" name="EmplDate" label="EmplDate : String" kind="Persistent" fieldName="_empldate" />
+      <Property Id="a89813b7-317e-4859-ad21-1d0bbdf55d8c" name="EmsalrpSrl" type="Int64" label="EmsalrpSrl : Int64" kind="Persistent" fieldName="_emsalrpsrl" />
+      <Property Id="407a61e6-a4e5-4594-88de-a3b91a3f598e" name="Family" label="Family : String" kind="Persistent" fieldName="_family" />
+      <Property Id="10ca7e6e-045a-421c-962b-af2d8dcebff0" name="FileNo" label="FileNo : String" kind="Persistent" fieldName="_fileno" />
+      <Property Id="abe59203-5505-49b5-aa8a-1cba663743c3" name="Head" type="Int16" label="Head : Int16" nullable="true" kind="Persistent" fieldName="_head" />
+      <Property Id="4b931a32-a5a1-4af7-9f20-b0b376d1d4a4" name="IdNo" label="IdNo : String" kind="Persistent" fieldName="_idno" />
+      <Property Id="3a84f8a6-5bd1-4bc6-a310-51c2bbb267c2" name="IssuDate" label="IssuDate : String" kind="Persistent" fieldName="_issudate" />
+      <Property Id="3731f537-11b9-4393-a798-357d85bd5950" name="JobCode" label="JobCode : String" kind="Persistent" fieldName="_jobcode" />
+      <Property Id="2a4a4252-4a7b-481a-b3fe-b93da167f1f8" name="JobSrl" type="Int32" label="JobSrl : Int32" kind="Persistent" fieldName="_jobsrl" />
+      <Property Id="e54109cb-050a-454a-a640-35318aa80dfe" name="JobTitle" label="JobTitle : String" kind="Persistent" fieldName="_jobtitle" />
+      <Property Id="c3267b18-b63f-442e-a903-be1357ddd427" name="MeliCode" label="MeliCode : String" kind="Persistent" fieldName="_melicode" />
+      <Property Id="7b4432c0-e682-4015-ac29-61f654f0d361" name="MobileNo" label="MobileNo : String" kind="Persistent" fieldName="_mobileno" />
+      <Property Id="dc20aaed-760b-4b87-92de-8fffc08b4fe7" name="Name" label="Name : String" kind="Persistent" fieldName="_name" />
+      <Property Id="327d049a-b644-4504-9804-21c1dcfbe8f9" name="NameFamily" label="NameFamily : String" kind="Persistent" fieldName="_namefamily" />
+      <Property Id="f80a7222-9fda-44bd-8237-5c9ed7ae8d65" name="PerId" type="Int64" label="PerId : Int64" nullable="true" kind="Persistent" identity="true" fieldName="_perid" />
+      <Property Id="b6f2c8f5-dfac-4957-ab09-548b4536c8d5" name="Positionlevel" type="Int16" label="Positionlevel : Int16" nullable="true" kind="Persistent" fieldName="_positionlevel" />
+      <Property Id="b0bf8556-7a94-4c2a-a7ba-7bed3d08347a" name="PostalCode" label="PostalCode : String" kind="Persistent" fieldName="_postalcode" />
+      <Property Id="c13fa53d-7ffb-41d4-a107-3a6282484e7d" name="PostSrl" type="Int32" label="PostSrl : Int32" kind="Persistent" fieldName="_postsrl" />
+      <Property Id="eedd8a45-e054-4624-a395-6ae8cdfca3c8" name="PostTitle" label="PostTitle : String" kind="Persistent" fieldName="_posttitle" />
+      <Property Id="bb630eae-b2ba-449a-a6fb-14142def5d0c" name="PrsNo" type="Int32" label="PrsNo : Int32" kind="Persistent" fieldName="_prsno" />
+      <Property Id="5ba21b83-cf55-4b29-be86-9f89d1e048e9" name="SematTitle" label="SematTitle : String" kind="Persistent" fieldName="_semattitle" />
+      <Property Id="bba6180d-45ff-4a4c-aadc-d11c50456543" name="StatementNo" type="Int64" label="StatementNo : Int64" nullable="true" kind="Persistent" fieldName="_statementno" />
+      <Property Id="ba433096-5db4-46f8-b397-0966eeb2866b" name="TelNo" label="TelNo : String" kind="Persistent" fieldName="_telno" />
+    </DomainClass>
+  </Types>
+  <domainContext>
+    <domainModelHasDomainContext Id="3b46127d-ff7f-4fe5-b6fd-3bfc97eb38a5">
+      <domainContainer name="EntitiesModel1" namespace="ISE.ServiceDesk.Model" showPropertiesCompartment="true">
+        <entitySetProperty name="SdUserRequests" namespace="ISE.ServiceDesk.Model" type="SdUserRequest" label="SdUserRequests : IQueryable&lt;ISE.ServiceDesk.Model.SdUserRequest&gt;" />
+        <entitySetProperty name="SdServiceJobs" namespace="ISE.ServiceDesk.Model" type="SdServiceJob" label="SdServiceJobs : IQueryable&lt;ISE.ServiceDesk.Model.SdServiceJob&gt;" />
+        <entitySetProperty name="SdServiceCategoryJobs" namespace="ISE.ServiceDesk.Model" type="SdServiceCategoryJob" label="SdServiceCategoryJobs : IQueryable&lt;ISE.ServiceDesk.Model.SdServiceCategoryJob&gt;" />
+        <entitySetProperty name="SdServiceCategories" namespace="ISE.ServiceDesk.Model" type="SdServiceCategory" label="SdServiceCategories : IQueryable&lt;ISE.ServiceDesk.Model.SdServiceCategory&gt;" />
+        <entitySetProperty name="SdRequestStates" namespace="ISE.ServiceDesk.Model" type="SdRequestState" label="SdRequestStates : IQueryable&lt;ISE.ServiceDesk.Model.SdRequestState&gt;" />
+        <entitySetProperty name="SdRequestProcesses" namespace="ISE.ServiceDesk.Model" type="SdRequestProcess" label="SdRequestProcesses : IQueryable&lt;ISE.ServiceDesk.Model.SdRequestProcess&gt;" />
+        <entitySetProperty name="SdRequestAttachments" namespace="ISE.ServiceDesk.Model" type="SdRequestAttachment" label="SdRequestAttachments : IQueryable&lt;ISE.ServiceDesk.Model.SdRequestAttachment&gt;" />
+        <entitySetProperty name="SdRequestAssignedExperts" namespace="ISE.ServiceDesk.Model" type="SdRequestAssignedExpert" label="SdRequestAssignedExperts : IQueryable&lt;ISE.ServiceDesk.Model.SdRequestAssignedExpert&gt;" />
+        <entitySetProperty name="SdOffices" namespace="ISE.ServiceDesk.Model" type="SdOffice" label="SdOffices : IQueryable&lt;ISE.ServiceDesk.Model.SdOffice&gt;" />
+        <entitySetProperty name="SdItRoleExperts" namespace="ISE.ServiceDesk.Model" type="SdItRoleExpert" label="SdItRoleExperts : IQueryable&lt;ISE.ServiceDesk.Model.SdItRoleExpert&gt;" />
+        <entitySetProperty name="SdItRoles" namespace="ISE.ServiceDesk.Model" type="SdItRole" label="SdItRoles : IQueryable&lt;ISE.ServiceDesk.Model.SdItRole&gt;" />
+        <entitySetProperty name="SdItExperts" namespace="ISE.ServiceDesk.Model" type="SdItExpert" label="SdItExperts : IQueryable&lt;ISE.ServiceDesk.Model.SdItExpert&gt;" />
+        <entitySetProperty name="SdFilterCategories" namespace="ISE.ServiceDesk.Model" type="SdFilterCategory" label="SdFilterCategories : IQueryable&lt;ISE.ServiceDesk.Model.SdFilterCategory&gt;" />
+        <entitySetProperty name="VwPersonels" namespace="ISE.ServiceDesk.Model" type="VwPersonel" label="VwPersonels : IQueryable&lt;ISE.ServiceDesk.Model.VwPersonel&gt;" />
+        <entitySetProperty name="Objecttypes" namespace="ISE.ServiceDesk.Model" type="Objecttype" label="Objecttypes : IQueryable&lt;ISE.ServiceDesk.Model.Objecttype&gt;" />
+        <entitySetProperty name="SdRequestWorks" namespace="ISE.ServiceDesk.Model" type="SdRequestWork" label="SdRequestWorks : IQueryable&lt;ISE.ServiceDesk.Model.SdRequestWork&gt;" />
+        <entitySetProperty name="SdWorks" namespace="ISE.ServiceDesk.Model" type="SdWork" label="SdWorks : IQueryable&lt;ISE.ServiceDesk.Model.SdWork&gt;" />
+        <entitySetProperty name="Requestcartablecycles" namespace="ISE.ServiceDesk.Model" type="Requestcartablecycle" label="Requestcartablecycles : IQueryable&lt;ISE.ServiceDesk.Model.Requestcartablecycle&gt;" />
+        <entitySetProperty name="VwHokms" namespace="ISE.ServiceDesk.Model" type="VwHokm" label="VwHokms : IQueryable&lt;ISE.ServiceDesk.Model.VwHokm&gt;" />
+      </domainContainer>
+    </domainModelHasDomainContext>
+  </domainContext>
+</DomainModel>

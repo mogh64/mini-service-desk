@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{122FC079-26B4-4304-8D64-746104BD07BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnitTestProject1</RootNamespace>
+    <AssemblyName>UnitTestProject1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ISE.Framework.Common">
+      <HintPath>..\..\IKCo service\ISE.ExtServices\ServerRelease\ISE.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ISE.ServiceDesk.Bussiness\ISE.ServiceDesk.Bussiness.csproj">
+      <Project>{237317df-ee4b-473f-8881-6a8117d3c437}</Project>
+      <Name>ISE.ServiceDesk.Bussiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISE.ServiceDesk.Client.Common\ISE.ServiceDesk.Client.Common.csproj">
+      <Project>{167dd1fb-e98a-4613-8961-e33c78f390bb}</Project>
+      <Name>ISE.ServiceDesk.Client.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISE.ServiceDesk.Client\ISE.ServiceDesk.Client.csproj">
+      <Project>{8ea34b31-a8ba-4a58-9589-7e2f62e8de4c}</Project>
+      <Name>ISE.ServiceDesk.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISE.ServiceDesk.Common\ISE.ServiceDesk.Common.csproj">
+      <Project>{0d993e74-4adf-41da-a019-8c3b21353e75}</Project>
+      <Name>ISE.ServiceDesk.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISE.ServiceDesk.DataAccess\ISE.ServiceDesk.DataAccess.csproj">
+      <Project>{dd4dfd68-5853-48f4-b06d-3f27de888657}</Project>
+      <Name>ISE.ServiceDesk.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISE.ServiceDesk.Model\ISE.ServiceDesk.Model.csproj">
+      <Project>{e545c6ed-d805-47bc-acc1-a19cb08cc3dc}</Project>
+      <Name>ISE.ServiceDesk.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISE.ServiceDesk.Service.ConsoleHost\ISE.ServiceDesk.Service.ConsoleHost.csproj">
+      <Project>{c1810838-3381-4c84-89d0-bac65bf9ca4a}</Project>
+      <Name>ISE.ServiceDesk.Service.ConsoleHost</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISE.ServiceDesk.Service\ISE.ServiceDesk.Service.csproj">
+      <Project>{26528391-78c0-4ff4-a737-f49fa9f31718}</Project>
+      <Name>ISE.ServiceDesk.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
